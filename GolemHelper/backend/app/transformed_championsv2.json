@@ -1,0 +1,2282 @@
+{
+    "266": {
+        "name": "Aatrox",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "103": {
+        "name": "Ahri",
+        "classes": [
+            "mage",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "84": {
+        "name": "Akali",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "166": {
+        "name": "Akshan",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "12": {
+        "name": "Alistar",
+        "classes": [
+            "tank",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "32": {
+        "name": "Amumu",
+        "classes": [
+            "tank",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "34": {
+        "name": "Anivia",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "1": {
+        "name": "Annie",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "523": {
+        "name": "Aphelios",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "22": {
+        "name": "Ashe",
+        "classes": [
+            "marksman",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "136": {
+        "name": "AurelionSol",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "268": {
+        "name": "Azir",
+        "classes": [
+            "mage",
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "432": {
+        "name": "Bard",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 3
+        }
+    },
+    "200": {
+        "name": "Belveth",
+        "classes": [
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "53": {
+        "name": "Blitzcrank",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "63": {
+        "name": "Brand",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "201": {
+        "name": "Braum",
+        "classes": [
+            "support",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "233": {
+        "name": "Briar",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "51": {
+        "name": "Caitlyn",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "164": {
+        "name": "Camille",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "69": {
+        "name": "Cassiopeia",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "31": {
+        "name": "Chogath",
+        "classes": [
+            "tank",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "42": {
+        "name": "Corki",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "122": {
+        "name": "Darius",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "131": {
+        "name": "Diana",
+        "classes": [
+            "fighter",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "119": {
+        "name": "Draven",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "36": {
+        "name": "DrMundo",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "245": {
+        "name": "Ekko",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "60": {
+        "name": "Elise",
+        "classes": [
+            "mage",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "28": {
+        "name": "Evelynn",
+        "classes": [
+            "assassin",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "81": {
+        "name": "Ezreal",
+        "classes": [
+            "marksman",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "9": {
+        "name": "Fiddlesticks",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "114": {
+        "name": "Fiora",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "105": {
+        "name": "Fizz",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "3": {
+        "name": "Galio",
+        "classes": [
+            "tank",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "41": {
+        "name": "Gangplank",
+        "classes": [
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "86": {
+        "name": "Garen",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "150": {
+        "name": "Gnar",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "79": {
+        "name": "Gragas",
+        "classes": [
+            "fighter",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "104": {
+        "name": "Graves",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "887": {
+        "name": "Gwen",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "120": {
+        "name": "Hecarim",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "74": {
+        "name": "Heimerdinger",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "910":{
+        "name": "Hwei",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "420": {
+        "name": "Illaoi",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "39": {
+        "name": "Irelia",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "427": {
+        "name": "Ivern",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 3
+        }
+    },
+    "40": {
+        "name": "Janna",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "59": {
+        "name": "JarvanIV",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "24": {
+        "name": "Jax",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "126": {
+        "name": "Jayce",
+        "classes": [
+            "fighter",
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "202": {
+        "name": "Jhin",
+        "classes": [
+            "marksman",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "222": {
+        "name": "Jinx",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "145": {
+        "name": "Kaisa",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 0,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "429": {
+        "name": "Kalista",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "43": {
+        "name": "Karma",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "30": {
+        "name": "Karthus",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "38": {
+        "name": "Kassadin",
+        "classes": [
+            "assassin",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "55": {
+        "name": "Katarina",
+        "classes": [
+            "assassin",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "10": {
+        "name": "Kayle",
+        "classes": [
+            "fighter",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "141": {
+        "name": "Kayn",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "85": {
+        "name": "Kennen",
+        "classes": [
+            "mage",
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "121": {
+        "name": "Khazix",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "203": {
+        "name": "Kindred",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "240": {
+        "name": "Kled",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "96": {
+        "name": "KogMaw",
+        "classes": [
+            "marksman",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "897": {
+        "name": "KSante",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "7": {
+        "name": "Leblanc",
+        "classes": [
+            "assassin",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "64": {
+        "name": "LeeSin",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "89": {
+        "name": "Leona",
+        "classes": [
+            "tank",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "876": {
+        "name": "Lillia",
+        "classes": [
+            "fighter",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "127": {
+        "name": "Lissandra",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "236": {
+        "name": "Lucian",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "117": {
+        "name": "Lulu",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "99": {
+        "name": "Lux",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "54": {
+        "name": "Malphite",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "90": {
+        "name": "Malzahar",
+        "classes": [
+            "mage",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "57": {
+        "name": "Maokai",
+        "classes": [
+            "tank",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "11": {
+        "name": "MasterYi",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "902": {
+        "name": "Milio",
+        "classes": [
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "21": {
+        "name": "MissFortune",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "62": {
+        "name": "MonkeyKing",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "82": {
+        "name": "Mordekaiser",
+        "classes": [
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "25": {
+        "name": "Morgana",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "950": {
+        "name": "Naafiri",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "267": {
+        "name": "Nami",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "75": {
+        "name": "Nasus",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "111": {
+        "name": "Nautilus",
+        "classes": [
+            "tank",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "518": {
+        "name": "Neeko",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "76": {
+        "name": "Nidalee",
+        "classes": [
+            "assassin",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "895": {
+        "name": "Nilah",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "56": {
+        "name": "Nocturne",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "20": {
+        "name": "Nunu",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "2": {
+        "name": "Olaf",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "61": {
+        "name": "Orianna",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "516": {
+        "name": "Ornn",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "80": {
+        "name": "Pantheon",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "78": {
+        "name": "Poppy",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "555": {
+        "name": "Pyke",
+        "classes": [
+            "support",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "246": {
+        "name": "Qiyana",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "133": {
+        "name": "Quinn",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "497": {
+        "name": "Rakan",
+        "classes": [
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 3
+        }
+    },
+    "33": {
+        "name": "Rammus",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "421": {
+        "name": "RekSai",
+        "classes": [
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "526": {
+        "name": "Rell",
+        "classes": [
+            "tank",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "888": {
+        "name": "Renata",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "58": {
+        "name": "Renekton",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "107": {
+        "name": "Rengar",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "92": {
+        "name": "Riven",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "68": {
+        "name": "Rumble",
+        "classes": [
+            "fighter",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "13": {
+        "name": "Ryze",
+        "classes": [
+            "mage",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "360": {
+        "name": "Samira",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "113": {
+        "name": "Sejuani",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "235": {
+        "name": "Senna",
+        "classes": [
+            "marksman",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "147": {
+        "name": "Seraphine",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "875": {
+        "name": "Sett",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "35": {
+        "name": "Shaco",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "98": {
+        "name": "Shen",
+        "classes": [
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 3
+        }
+    },
+    "102": {
+        "name": "Shyvana",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "27": {
+        "name": "Singed",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "14": {
+        "name": "Sion",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "15": {
+        "name": "Sivir",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "72": {
+        "name": "Skarner",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "37": {
+        "name": "Sona",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "16": {
+        "name": "Soraka",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "50": {
+        "name": "Swain",
+        "classes": [
+            "mage",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "517": {
+        "name": "Sylas",
+        "classes": [
+            "mage",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "134": {
+        "name": "Syndra",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "223": {
+        "name": "TahmKench",
+        "classes": [
+            "support",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "163": {
+        "name": "Taliyah",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "91": {
+        "name": "Talon",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "44": {
+        "name": "Taric",
+        "classes": [
+            "support",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "17": {
+        "name": "Teemo",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "412": {
+        "name": "Thresh",
+        "classes": [
+            "support",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 3
+        }
+    },
+    "18": {
+        "name": "Tristana",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "48": {
+        "name": "Trundle",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "23": {
+        "name": "Tryndamere",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "4": {
+        "name": "TwistedFate",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        }
+    },
+    "29": {
+        "name": "Twitch",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "77": {
+        "name": "Udyr",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "6": {
+        "name": "Urgot",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "110": {
+        "name": "Varus",
+        "classes": [
+            "marksman",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "67": {
+        "name": "Vayne",
+        "classes": [
+            "marksman",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "45": {
+        "name": "Veigar",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "161": {
+        "name": "Velkoz",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "711": {
+        "name": "Vex",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "254": {
+        "name": "Vi",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "234": {
+        "name": "Viego",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "112": {
+        "name": "Viktor",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "8": {
+        "name": "Vladimir",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "106": {
+        "name": "Volibear",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "19": {
+        "name": "Warwick",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "498": {
+        "name": "Xayah",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "101": {
+        "name": "Xerath",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        }
+    },
+    "5": {
+        "name": "XinZhao",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "157": {
+        "name": "Yasuo",
+        "classes": [
+            "fighter",
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        }
+    },
+    "777": {
+        "name": "Yone",
+        "classes": [
+            "assassin",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "83": {
+        "name": "Yorick",
+        "classes": [
+            "fighter",
+            "tank"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        }
+    },
+    "350": {
+        "name": "Yuumi",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 3
+        }
+    },
+    "154": {
+        "name": "Zac",
+        "classes": [
+            "tank",
+            "fighter"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "238": {
+        "name": "Zed",
+        "classes": [
+            "assassin"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        }
+    },
+    "221": {
+        "name": "Zeri",
+        "classes": [
+            "marksman"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 0
+        }
+    },
+    "115": {
+        "name": "Ziggs",
+        "classes": [
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "26": {
+        "name": "Zilean",
+        "classes": [
+            "support",
+            "mage"
+        ],
+        "playstyle": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 3
+        }
+    },
+    "142": {
+        "name": "Zoe",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        }
+    },
+    "143": {
+        "name": "Zyra",
+        "classes": [
+            "mage",
+            "support"
+        ],
+        "playstyle": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        }
+    }
+}

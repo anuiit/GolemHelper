@@ -1,0 +1,10 @@
+PoroPilot
+GolemHelper/backend/riot_api_cache.sqlite
+GolemHelper/backend/.env
+GolemHelper/backend/__pycache__
+GolemHelper/__pycache__
+GolemHelper/v1
+GolemHelper/frontend/node_modules
+GolemHelper/frontend/.next
+.*.env
+.vscode
