@@ -12,6 +12,7 @@ def player_header(name, tagline):
     player_data = poro.summoner.by_puuid(player_puuid)
     player_champions = poro.mastery.by_puuid_top_champions(player_puuid)
     player_league = poro.league.summoner(player_data['id'])
+    in_game = is_player_in_game(name, tagline)
 
     player_data['profileIconId'] = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/profileicon/{player_data["profileIconId"]}.png'
 
@@ -74,55 +75,17 @@ def get_recent_matches(puuid):
 
     return match_data
 
-def get_player_profile_data(name, tagline):
-    pass
-
-def get_player_history(puuid, days=7, max_days=30, max_history=20):
-    player_history = []
-    start = 7
-    end = 0
-
-    #fix la librarie poro pcq la ca marche pas
-    while len(player_history) < max_history and start <= max_days:
-        start_time = datetime.now() - timedelta(days=start)
-        start_time = start_time.strftime("%Y-%m-%d")
-
-        end_time = datetime.now() - timedelta(days=end)
-        end_time = end_time.strftime("%Y-%m-%d")
-
-        player_history.extend(poro.match.by_puuid_matchlist(puuid, queue=420, count=50, startTime=start_time, endTime=end_time))
-
-        start += days
-        end += days
-
-    player_history = list(dict.fromkeys(player_history))
-    # print(player_history)
-
-    return player_history
-
-def is_player_in_game(name_tagline):
-    summoner_name, tagline = name_tagline.split('#')
-    summoner_name, tagline  = summoner_name.replace(' ', ''), tagline.replace(' ', '')
-
-    summoner_puuid = poro.account.by_gamename(summoner_name, tagline)['puuid']
-    summoner_id = poro.summoner.by_puuid(summoner_puuid)['id']
-
-    game_data = poro.spectator.by_summoner(summoner_id) or None
-
-    return game_data
-
-def getPlayerRank(summonerId):
-    player_league = poro.league.summoner(summonerId)
-    # get tier where queueType is RANKED_SOLO_5x5
-    tier = next((queue['tier'] for queue in player_league if queue['queueType'] == 'RANKED_SOLO_5x5'), None)
-    rank = next((queue['rank'] for queue in player_league if queue['queueType'] == 'RANKED_SOLO_5x5'), None)
-
-    return tier, rank, f'{tier.capitalize()}.png'
-
-def process_match_data(match_data):
+def process_match_data(ori_match_data, livegame=False):
     participants = []
-    
-    for player in match_data['info']['participants']:
+    # print("match_data", match_data)
+    if livegame == False:
+        match_data = ori_match_data['info']
+    else:
+        match_data = ori_match_data
+
+    # print("match_data2", match_data)
+
+    for player in match_data['participants']:
         style_perks = player['perks']['styles']
         primary_perks = [style_perks[0]['style']]
         secondary_perks = [style_perks[1]['style']]
@@ -186,42 +149,89 @@ def process_match_data(match_data):
 
         participants.append(player_data)
 
-    game_duration_seconds = match_data['info']['gameDuration']
+    game_duration_seconds = match_data['gameDuration']
     game_duration_minutes = game_duration_seconds // 60
     game_duration_seconds = game_duration_seconds % 60
     game_duration_formatted = f"{game_duration_minutes}:{game_duration_seconds:02d}"
 
-    game_creation_unix = match_data['info']['gameCreation']
+    game_creation_unix = match_data['gameCreation']
     game_creation_date = datetime.fromtimestamp(game_creation_unix / 1000).strftime('%d/%m/%Y')
 
     # print(match_data['info']['gameMode'])
     # print(match_data['info']['gameType'])
     # print(match_data['info']['queueId'])
 
-    game_mode = getQueueName(match_data['info']['queueId'])
+    game_mode = getQueueName(match_data['queueId'])
     # print("tests", test)
 
     match_data = {
-        'gameId': match_data['metadata']['matchId'],
+        'gameId': ori_match_data['metadata']['matchId'] if livegame == False else match_data['gameId'],
         'gameDuration': game_duration_formatted,
-        'gameVersion': match_data['info']['gameVersion'],
+        'gameVersion': match_data['gameVersion'],
         'gameCreation': game_creation_date,
         'gameMode': game_mode,
-        'gameResult': match_data['info']['endOfGameResult'],
+        'gameResult': match_data['endOfGameResult'],
         'teams': {
             'blue': {
                 'teamId': 100,
-                'win': match_data['info']['teams'][0]['win'],
-                'bans': [ban['championId'] for ban in match_data['info']['teams'][0]['bans']],
+                'win': match_data['teams'][0]['win'],
+                'bans': [ban['championId'] for ban in match_data['teams'][0]['bans']],
                 'participants': participants[:5]
             },
             'red': {
                 'teamId': 200,
-                'win': match_data['info']['teams'][1]['win'],
-                'bans': [ban['championId'] for ban in match_data['info']['teams'][1]['bans']],
+                'win': match_data['teams'][1]['win'],
+                'bans': [ban['championId'] for ban in match_data['teams'][1]['bans']],
                 'participants': participants[5:]
             },
         }
     }
 
     return match_data
+
+## UTILITIES API FUNCTIONS ###
+
+def get_player_history(puuid, days=7, max_days=30, max_history=20):
+    player_history = []
+    start = 7
+    end = 0
+
+    #fix la librarie poro pcq la ca marche pas
+    while len(player_history) < max_history and start <= max_days:
+        start_time = datetime.now() - timedelta(days=start)
+        start_time = start_time.strftime("%Y-%m-%d")
+
+        end_time = datetime.now() - timedelta(days=end)
+        end_time = end_time.strftime("%Y-%m-%d")
+
+        player_history.extend(poro.match.by_puuid_matchlist(puuid, queue=420, count=50, startTime=start_time, endTime=end_time))
+
+        start += days
+        end += days
+
+    player_history = list(dict.fromkeys(player_history))
+    # print(player_history)
+
+    return player_history
+
+def is_player_in_game(name, tagline):
+    summoner_puuid = poro.account.by_gamename(name, tagline)['puuid']
+    summoner_id = poro.summoner.by_puuid(summoner_puuid)['id']
+
+    game_data = poro.spectator.by_summoner(summoner_puuid) or None
+
+    print(name, tagline, " - is in game: ", True if game_data else False)
+    if game_data:
+        test = process_match_data(game_data)
+    # test = process_match_data(game_data, livegame=True)
+    #print(test)
+
+    return game_data
+
+def getPlayerRank(summonerId):
+    player_league = poro.league.summoner(summonerId)
+    # get tier where queueType is RANKED_SOLO_5x5
+    tier = next((queue['tier'] for queue in player_league if queue['queueType'] == 'RANKED_SOLO_5x5'), None)
+    rank = next((queue['rank'] for queue in player_league if queue['queueType'] == 'RANKED_SOLO_5x5'), None)
+
+    return tier, rank, f'{tier.capitalize()}.png'

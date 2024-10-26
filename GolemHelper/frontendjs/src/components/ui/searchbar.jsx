@@ -1,5 +1,7 @@
 // src/components/ui/searchbar.jsx
 
+'use client'
+
 import React, { useState } from 'react';
 import { usePlayerDataUpdate } from '@/context/playerDataContext';
 

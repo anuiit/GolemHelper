@@ -99,7 +99,7 @@ export default function MatchCard({ match }) {
                   <img src={secondaryStyle[1]} className="h-7 w-7" title={secondaryStyle[0]} />
                 </div>
 
-                <div className="flex flex-col items-center gap-3 ">
+                <div className="flex flex-col items-center gap-3 justify-evenly ">
                   {primaryPerks && (
                     <div className="flex gap-1 items-center">
                       {primaryPerks.map((runeGroup, index) => (
@@ -123,7 +123,7 @@ export default function MatchCard({ match }) {
               </div>
 
               {/* Items */}
-              <div className="grid grid-cols-3 items-center gap-0.5 ml-2 w-18 flex-none">
+              <div className="grid grid-cols-3 items-center gap-1 ml-5 w-18 flex-none">
                 {player && Object.values(player.items).map((item, index) => (
                   item.name === null ? (
                     <div key={index} className={`h-6 w-6 rounded-md border-0 ${player.win === true ? 'bg-sky-900' : 'bg-rose-900'}`} />
