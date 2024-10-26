@@ -6,6 +6,6 @@ GolemHelper/__pycache__
 GolemHelper/v1
 GolemHelper/frontend/node_modules
 GolemHelper/frontend/.next
-GolemHelper/frontend
+frontend
 .*.env
 .vscode
