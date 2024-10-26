@@ -9,6 +9,4 @@ GolemHelper/frontendjs/.next
 GolemHelper/frontendjs/node_modules
 .*.env
 .vscode
-
-GolemHelper/backend/__pycache__
-GolemHelper/backend/app/__pycache__
+**/__pycache__/
