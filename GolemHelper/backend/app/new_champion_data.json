@@ -1,0 +1,2313 @@
+{
+    "266": {
+        "name": "Aatrox",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Blood Well"
+    },
+    "103": {
+        "name": "Ahri",
+        "classes": [
+            "Mage",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 4,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "84": {
+        "name": "Akali",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 3,
+            "magic": 8,
+            "difficulty": 7
+        },
+        "resource": "Energy"
+    },
+    "166": {
+        "name": "Akshan",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 0,
+            "magic": 0,
+            "difficulty": 0
+        },
+        "resource": "Mana"
+    },
+    "12": {
+        "name": "Alistar",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 9,
+            "magic": 5,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "32": {
+        "name": "Amumu",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "34": {
+        "name": "Anivia",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 4,
+            "magic": 10,
+            "difficulty": 10
+        },
+        "resource": "Mana"
+    },
+    "1": {
+        "name": "Annie",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 3,
+            "magic": 10,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "523": {
+        "name": "Aphelios",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 2,
+            "magic": 1,
+            "difficulty": 10
+        },
+        "resource": "Mana"
+    },
+    "22": {
+        "name": "Ashe",
+        "classes": [
+            "Marksman",
+            "Support"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 3,
+            "magic": 2,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "136": {
+        "name": "AurelionSol",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 3,
+            "magic": 8,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "893": {
+        "name": "Aurora",
+        "classes": [
+            "Mage",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 4,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "268": {
+        "name": "Azir",
+        "classes": [
+            "Mage",
+            "Marksman"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 3,
+            "magic": 8,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "432": {
+        "name": "Bard",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 4,
+            "magic": 5,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "200": {
+        "name": "Belveth",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 2,
+            "magic": 7,
+            "difficulty": 10
+        },
+        "resource": ""
+    },
+    "53": {
+        "name": "Blitzcrank",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 8,
+            "magic": 5,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "63": {
+        "name": "Brand",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 9,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "201": {
+        "name": "Braum",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 9,
+            "magic": 4,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "233": {
+        "name": "Briar",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 3
+        },
+        "resource": "Fury"
+    },
+    "51": {
+        "name": "Caitlyn",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 2,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "164": {
+        "name": "Camille",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 6,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "69": {
+        "name": "Cassiopeia",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 3,
+            "magic": 9,
+            "difficulty": 10
+        },
+        "resource": "Mana"
+    },
+    "31": {
+        "name": "Chogath",
+        "classes": [
+            "Tank",
+            "Mage"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 7,
+            "magic": 7,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "42": {
+        "name": "Corki",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 3,
+            "magic": 6,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "122": {
+        "name": "Darius",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 1,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "131": {
+        "name": "Diana",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "119": {
+        "name": "Draven",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 3,
+            "magic": 1,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "36": {
+        "name": "DrMundo",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 7,
+            "magic": 6,
+            "difficulty": 5
+        },
+        "resource": "None"
+    },
+    "245": {
+        "name": "Ekko",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 3,
+            "magic": 7,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "60": {
+        "name": "Elise",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "28": {
+        "name": "Evelynn",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 2,
+            "magic": 7,
+            "difficulty": 10
+        },
+        "resource": "Mana"
+    },
+    "81": {
+        "name": "Ezreal",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 2,
+            "magic": 6,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "9": {
+        "name": "Fiddlesticks",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 3,
+            "magic": 9,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "114": {
+        "name": "Fiora",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 4,
+            "magic": 2,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "105": {
+        "name": "Fizz",
+        "classes": [
+            "Assassin",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 4,
+            "magic": 7,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "3": {
+        "name": "Galio",
+        "classes": [
+            "Tank",
+            "Mage"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 10,
+            "magic": 6,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "41": {
+        "name": "Gangplank",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 6,
+            "magic": 4,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "86": {
+        "name": "Garen",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 7,
+            "magic": 1,
+            "difficulty": 5
+        },
+        "resource": "None"
+    },
+    "150": {
+        "name": "Gnar",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 5,
+            "magic": 5,
+            "difficulty": 8
+        },
+        "resource": "Rage"
+    },
+    "79": {
+        "name": "Gragas",
+        "classes": [
+            "Fighter",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 7,
+            "magic": 6,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "104": {
+        "name": "Graves",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "887": {
+        "name": "Gwen",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 4,
+            "magic": 5,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "120": {
+        "name": "Hecarim",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 6,
+            "magic": 4,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "74": {
+        "name": "Heimerdinger",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "910": {
+        "name": "Hwei",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 1,
+            "magic": 8,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "420": {
+        "name": "Illaoi",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 6,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "39": {
+        "name": "Irelia",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 4,
+            "magic": 5,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "427": {
+        "name": "Ivern",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "40": {
+        "name": "Janna",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "59": {
+        "name": "JarvanIV",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 8,
+            "magic": 3,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "24": {
+        "name": "Jax",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "126": {
+        "name": "Jayce",
+        "classes": [
+            "Marksman",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 3,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "202": {
+        "name": "Jhin",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 2,
+            "magic": 6,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "222": {
+        "name": "Jinx",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 2,
+            "magic": 4,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "145": {
+        "name": "Kaisa",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "429": {
+        "name": "Kalista",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 4,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "43": {
+        "name": "Karma",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 7,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "30": {
+        "name": "Karthus",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 10,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "38": {
+        "name": "Kassadin",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 5,
+            "magic": 8,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "55": {
+        "name": "Katarina",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 3,
+            "magic": 9,
+            "difficulty": 8
+        },
+        "resource": "None"
+    },
+    "10": {
+        "name": "Kayle",
+        "classes": [
+            "Mage",
+            "Marksman"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 6,
+            "magic": 7,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "141": {
+        "name": "Kayn",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 6,
+            "magic": 1,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "85": {
+        "name": "Kennen",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 4,
+            "magic": 7,
+            "difficulty": 4
+        },
+        "resource": "Energy"
+    },
+    "121": {
+        "name": "Khazix",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 4,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "203": {
+        "name": "Kindred",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 2,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "240": {
+        "name": "Kled",
+        "classes": [
+            "Fighter"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 2,
+            "difficulty": 7
+        },
+        "resource": "Courage"
+    },
+    "96": {
+        "name": "KogMaw",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 5,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "897": {
+        "name": "KSante",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 8,
+            "magic": 7,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "7": {
+        "name": "Leblanc",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 4,
+            "magic": 10,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "64": {
+        "name": "LeeSin",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Energy"
+    },
+    "89": {
+        "name": "Leona",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 8,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "876": {
+        "name": "Lillia",
+        "classes": [
+            "Fighter",
+            "Mage"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 2,
+            "magic": 10,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "127": {
+        "name": "Lissandra",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 5,
+            "magic": 8,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "236": {
+        "name": "Lucian",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "117": {
+        "name": "Lulu",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "99": {
+        "name": "Lux",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 4,
+            "magic": 9,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "54": {
+        "name": "Malphite",
+        "classes": [
+            "Tank",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 9,
+            "magic": 7,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "90": {
+        "name": "Malzahar",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 9,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "57": {
+        "name": "Maokai",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 8,
+            "magic": 6,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "11": {
+        "name": "MasterYi",
+        "classes": [
+            "Assassin",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 4,
+            "magic": 2,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "902": {
+        "name": "Milio",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 4,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "21": {
+        "name": "MissFortune",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 5,
+            "difficulty": 1
+        },
+        "resource": "Mana"
+    },
+    "62": {
+        "name": "MonkeyKing",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 2,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "82": {
+        "name": "Mordekaiser",
+        "classes": [
+            "Fighter",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 6,
+            "magic": 7,
+            "difficulty": 4
+        },
+        "resource": "Shield"
+    },
+    "25": {
+        "name": "Morgana",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 1
+        },
+        "resource": "Mana"
+    },
+    "950": {
+        "name": "Naafiri",
+        "classes": [
+            "Assassin",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 0,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "267": {
+        "name": "Nami",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 3,
+            "magic": 7,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "75": {
+        "name": "Nasus",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 5,
+            "magic": 6,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "111": {
+        "name": "Nautilus",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 6,
+            "magic": 6,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "518": {
+        "name": "Neeko",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 1,
+            "magic": 9,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "76": {
+        "name": "Nidalee",
+        "classes": [
+            "Assassin",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 4,
+            "magic": 7,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "895": {
+        "name": "Nilah",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 4,
+            "difficulty": 10
+        },
+        "resource": "Mana"
+    },
+    "56": {
+        "name": "Nocturne",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 2,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "20": {
+        "name": "Nunu",
+        "classes": [
+            "Tank",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 6,
+            "magic": 7,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "2": {
+        "name": "Olaf",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "61": {
+        "name": "Orianna",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 3,
+            "magic": 9,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "516": {
+        "name": "Ornn",
+        "classes": [
+            "Tank"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 9,
+            "magic": 3,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "80": {
+        "name": "Pantheon",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 4,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "78": {
+        "name": "Poppy",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 7,
+            "magic": 2,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "555": {
+        "name": "Pyke",
+        "classes": [
+            "Support",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 3,
+            "magic": 1,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "246": {
+        "name": "Qiyana",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 2,
+            "magic": 4,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "133": {
+        "name": "Quinn",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 4,
+            "magic": 2,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "497": {
+        "name": "Rakan",
+        "classes": [
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 4,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "33": {
+        "name": "Rammus",
+        "classes": [
+            "Tank"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 10,
+            "magic": 5,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "421": {
+        "name": "RekSai",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 2,
+            "difficulty": 3
+        },
+        "resource": "Rage"
+    },
+    "526": {
+        "name": "Rell",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 0,
+            "magic": 0,
+            "difficulty": 0
+        },
+        "resource": "Mana"
+    },
+    "888": {
+        "name": "Renata",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 6,
+            "magic": 9,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "58": {
+        "name": "Renekton",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 2,
+            "difficulty": 3
+        },
+        "resource": "Fury"
+    },
+    "107": {
+        "name": "Rengar",
+        "classes": [
+            "Assassin",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 4,
+            "magic": 2,
+            "difficulty": 8
+        },
+        "resource": "Ferocity"
+    },
+    "92": {
+        "name": "Riven",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 1,
+            "difficulty": 8
+        },
+        "resource": "None"
+    },
+    "68": {
+        "name": "Rumble",
+        "classes": [
+            "Fighter",
+            "Mage"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 10
+        },
+        "resource": "Heat"
+    },
+    "13": {
+        "name": "Ryze",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 10,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "360": {
+        "name": "Samira",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "113": {
+        "name": "Sejuani",
+        "classes": [
+            "Tank"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 7,
+            "magic": 6,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "235": {
+        "name": "Senna",
+        "classes": [
+            "Support",
+            "Marksman"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 2,
+            "magic": 6,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "147": {
+        "name": "Seraphine",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 0,
+            "magic": 0,
+            "difficulty": 0
+        },
+        "resource": "Mana"
+    },
+    "875": {
+        "name": "Sett",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 1,
+            "difficulty": 2
+        },
+        "resource": "Grit"
+    },
+    "35": {
+        "name": "Shaco",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 6,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "98": {
+        "name": "Shen",
+        "classes": [
+            "Tank"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 9,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Energy"
+    },
+    "102": {
+        "name": "Shyvana",
+        "classes": [
+            "Fighter",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 6,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Fury"
+    },
+    "27": {
+        "name": "Singed",
+        "classes": [
+            "Tank",
+            "Mage"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 8,
+            "magic": 7,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "14": {
+        "name": "Sion",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 9,
+            "magic": 3,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "15": {
+        "name": "Sivir",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 3,
+            "magic": 1,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "72": {
+        "name": "Skarner",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 8,
+            "magic": 5,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "901": {
+        "name": "Smolder",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 2,
+            "magic": 5,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "37": {
+        "name": "Sona",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 2,
+            "magic": 8,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "16": {
+        "name": "Soraka",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 5,
+            "magic": 7,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "50": {
+        "name": "Swain",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 6,
+            "magic": 9,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "517": {
+        "name": "Sylas",
+        "classes": [
+            "Mage",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 4,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "134": {
+        "name": "Syndra",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 3,
+            "magic": 9,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "223": {
+        "name": "TahmKench",
+        "classes": [
+            "Tank",
+            "Support"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 9,
+            "magic": 6,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "163": {
+        "name": "Taliyah",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 7,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "91": {
+        "name": "Talon",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 3,
+            "magic": 1,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "44": {
+        "name": "Taric",
+        "classes": [
+            "Support",
+            "Tank"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 8,
+            "magic": 5,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "17": {
+        "name": "Teemo",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 3,
+            "magic": 7,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "412": {
+        "name": "Thresh",
+        "classes": [
+            "Support",
+            "Tank"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 6,
+            "magic": 6,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "18": {
+        "name": "Tristana",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 3,
+            "magic": 5,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "48": {
+        "name": "Trundle",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 6,
+            "magic": 2,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "23": {
+        "name": "Tryndamere",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 5,
+            "magic": 2,
+            "difficulty": 5
+        },
+        "resource": "Fury"
+    },
+    "4": {
+        "name": "TwistedFate",
+        "classes": [
+            "Mage",
+            "Marksman"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 2,
+            "magic": 6,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "29": {
+        "name": "Twitch",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 2,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "77": {
+        "name": "Udyr",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 7,
+            "magic": 4,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "6": {
+        "name": "Urgot",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "110": {
+        "name": "Varus",
+        "classes": [
+            "Marksman",
+            "Mage"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 3,
+            "magic": 4,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "67": {
+        "name": "Vayne",
+        "classes": [
+            "Marksman",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 1,
+            "magic": 1,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "45": {
+        "name": "Veigar",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 10,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    },
+    "161": {
+        "name": "Velkoz",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 2,
+            "magic": 10,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "711": {
+        "name": "Vex",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 0,
+            "defense": 0,
+            "magic": 0,
+            "difficulty": 0
+        },
+        "resource": "Mana"
+    },
+    "254": {
+        "name": "Vi",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "234": {
+        "name": "Viego",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 4,
+            "magic": 2,
+            "difficulty": 5
+        },
+        "resource": "None"
+    },
+    "112": {
+        "name": "Viktor",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 4,
+            "magic": 10,
+            "difficulty": 9
+        },
+        "resource": "Mana"
+    },
+    "8": {
+        "name": "Vladimir",
+        "classes": [
+            "Mage",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 6,
+            "magic": 8,
+            "difficulty": 7
+        },
+        "resource": "Crimson Rush"
+    },
+    "106": {
+        "name": "Volibear",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 7,
+            "defense": 7,
+            "magic": 4,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "19": {
+        "name": "Warwick",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 3
+        },
+        "resource": "Mana"
+    },
+    "498": {
+        "name": "Xayah",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 10,
+            "defense": 6,
+            "magic": 1,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "101": {
+        "name": "Xerath",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 3,
+            "magic": 10,
+            "difficulty": 8
+        },
+        "resource": "Mana"
+    },
+    "5": {
+        "name": "XinZhao",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 6,
+            "magic": 3,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "157": {
+        "name": "Yasuo",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 4,
+            "difficulty": 10
+        },
+        "resource": "Flow"
+    },
+    "777": {
+        "name": "Yone",
+        "classes": [
+            "Fighter",
+            "Assassin"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 4,
+            "magic": 4,
+            "difficulty": 8
+        },
+        "resource": "Flow"
+    },
+    "83": {
+        "name": "Yorick",
+        "classes": [
+            "Fighter",
+            "Tank"
+        ],
+        "info": {
+            "attack": 6,
+            "defense": 6,
+            "magic": 4,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "350": {
+        "name": "Yuumi",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 5,
+            "defense": 1,
+            "magic": 8,
+            "difficulty": 2
+        },
+        "resource": "Mana"
+    },
+    "154": {
+        "name": "Zac",
+        "classes": [
+            "Tank",
+            "Fighter"
+        ],
+        "info": {
+            "attack": 3,
+            "defense": 7,
+            "magic": 7,
+            "difficulty": 8
+        },
+        "resource": "None"
+    },
+    "238": {
+        "name": "Zed",
+        "classes": [
+            "Assassin"
+        ],
+        "info": {
+            "attack": 9,
+            "defense": 2,
+            "magic": 1,
+            "difficulty": 7
+        },
+        "resource": "Energy"
+    },
+    "221": {
+        "name": "Zeri",
+        "classes": [
+            "Marksman"
+        ],
+        "info": {
+            "attack": 8,
+            "defense": 5,
+            "magic": 3,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "115": {
+        "name": "Ziggs",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 4,
+            "magic": 9,
+            "difficulty": 4
+        },
+        "resource": "Mana"
+    },
+    "26": {
+        "name": "Zilean",
+        "classes": [
+            "Support",
+            "Mage"
+        ],
+        "info": {
+            "attack": 2,
+            "defense": 5,
+            "magic": 8,
+            "difficulty": 6
+        },
+        "resource": "Mana"
+    },
+    "142": {
+        "name": "Zoe",
+        "classes": [
+            "Mage"
+        ],
+        "info": {
+            "attack": 1,
+            "defense": 7,
+            "magic": 8,
+            "difficulty": 5
+        },
+        "resource": "Mana"
+    },
+    "143": {
+        "name": "Zyra",
+        "classes": [
+            "Mage",
+            "Support"
+        ],
+        "info": {
+            "attack": 4,
+            "defense": 3,
+            "magic": 8,
+            "difficulty": 7
+        },
+        "resource": "Mana"
+    }
+}
