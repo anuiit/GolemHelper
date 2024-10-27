@@ -52,8 +52,8 @@ export default function MatchCard({ match }) {
             <p className="text-gray-300 text-xs w-20 font-semibold">{match.gameMode}</p>
               
               {player && (
-                <Avatar className="h-12 w-12 mr-2 ">
-                  <AvatarImage src={player.championIcon} alt={player.championName} title={player.championName} />
+                <Avatar className="h-12 w-12 mr-2 object-cover">
+                  <AvatarImage className="object-cover" src={player.championIcon} alt={player.championName} title={player.championName} />
                   <AvatarFallback>{player.championName}</AvatarFallback>
                 </Avatar>
               )}
