@@ -16,7 +16,7 @@ body {
 .card-background {
   position: relative;
   background-size: cover;
-  background-position: bottom 35px left -128px; /* Move the image 20px to the right and up by 40 pixels */
+  background-position: bottom 45px left -128px; /* Move the image 20px to the right and up by 40 pixels */
   overflow: hidden;
 }
 
