@@ -3,8 +3,54 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Geist;
   overflow-y: scroll;
+
+}
+
+.recharts-text {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.card-background {
+  position: relative;
+  background-size: cover;
+  background-position: bottom 35px left -128px; /* Move the image 20px to the right and up by 40 pixels */
+  overflow: hidden;
+}
+
+.card-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(19, 19, 22, 1) 64%,
+    rgba(19, 19, 22, 0.953) 66%,
+    rgba(19, 19, 22, 0.832) 68%,
+    rgba(19, 19, 22, 0.576) 70%,
+    rgba(19, 19, 22, 0.2) 72%,
+    rgba(19, 19, 22, 0.107) 73%,
+    rgba(19, 19, 22, 0) 75%
+  );
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
+}
+
+.card-champions {
+  object-view-box: inset(10% 10% 10% 10%);
+}
+
+.champion-icon {
+  object-view-box: inset(5% 5% 5% 5%);
+}
+
+.active-dot-transition {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 @layer base {

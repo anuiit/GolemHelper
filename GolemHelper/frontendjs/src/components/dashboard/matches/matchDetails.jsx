@@ -4,7 +4,7 @@ import React from 'react'
 import { runeDescriptions } from '@/data/runeDescriptions'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Card } from '../ui/card'
+import { Card } from '@/components/ui/Card'
 
 function MatchDetails() {
     // Calculate team stats

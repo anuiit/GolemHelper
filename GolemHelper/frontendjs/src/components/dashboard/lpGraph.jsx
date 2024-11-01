@@ -2,40 +2,81 @@
 
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 
-// Sample data based on the snippet
 const lpData = [
-  { date: "2024-09-30T18:06:49.000Z", lp: 62, division: "PLATINUM II" },
-  { date: "2024-09-30T19:37:04.000Z", lp: 91, division: "PLATINUM II" },
-  { date: "2024-09-30T20:17:56.000Z", lp: 21, division: "PLATINUM I" },
-  { date: "2024-09-30T21:12:10.000Z", lp: 50, division: "PLATINUM I" },
-  { date: "2024-09-30T22:58:37.000Z", lp: 6, division: "EMERALD IV" },
-  { date: "2024-10-03T21:08:21.000Z", lp: 26, division: "EMERALD IV" },
-  { date: "2024-10-03T22:58:24.000Z", lp: 46, division: "EMERALD IV" },
-  { date: "2024-10-04T17:00:05.000Z", lp: 48, division: "EMERALD IV" },
-  { date: "2024-10-08T17:45:02.000Z", lp: 68, division: "EMERALD IV" },
-  { date: "2024-10-08T20:13:26.000Z", lp: 88, division: "EMERALD IV" },
-  { date: "2024-10-09T19:55:10.000Z", lp: 70, division: "EMERALD IV" },
-  { date: "2024-10-10T19:22:47.000Z", lp: 48, division: "EMERALD IV" },
-  { date: "2024-10-10T23:26:59.000Z", lp: 25, division: "EMERALD IV" },
-  { date: "2024-10-16T21:27:30.000Z", lp: 45, division: "EMERALD IV" },
-  { date: "2024-10-17T19:34:57.000Z", lp: 68, division: "EMERALD IV" },
+  { date: "2024-09-01", lp: 20, division: "PLATINUM IV" },
+  { date: "2024-09-03", lp: 40, division: "PLATINUM IV" },
+  { date: "2024-09-05", lp: 30, division: "PLATINUM IV" }, // loss
+  { date: "2024-09-07", lp: 55, division: "PLATINUM IV" },
+  { date: "2024-09-10", lp: 75, division: "PLATINUM IV" },
+  { date: "2024-09-12", lp: 15, division: "PLATINUM III" }, // promotion with LP reset
+  { date: "2024-09-15", lp: 35, division: "PLATINUM III" },
+  { date: "2024-09-18", lp: 50, division: "PLATINUM III" },
+  { date: "2024-09-20", lp: 45, division: "PLATINUM III" }, // minor setback
+  { date: "2024-09-22", lp: 70, division: "PLATINUM III" },
+  { date: "2024-09-25", lp: 85, division: "PLATINUM III" },
+  { date: "2024-09-28", lp: 10, division: "PLATINUM II" }, // promotion
+  { date: "2024-10-01", lp: 25, division: "PLATINUM II" },
+  { date: "2024-10-03", lp: 5, division: "PLATINUM II" }, // loss
+  { date: "2024-10-05", lp: 35, division: "PLATINUM II" },
+  { date: "2024-10-07", lp: 65, division: "PLATINUM II" },
+  { date: "2024-10-10", lp: 90, division: "PLATINUM II" },
+
 ]
 
-export default function LPGraph() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+// Map divisions to colors
+const divisionColors = {
+  "IRON": "#6e6e6e",       // Gray
+  "BRONZE": "#cd7f32",     // Bronze
+  "SILVER": "#c0c0c0",     // Silver
+  "GOLD": "#ffd700",       // Gold
+  "PLATINUM": "#00bfff",   // Light Blue
+  "EMERALD": "#50C878",    // Emerald Green
+  "DIAMOND": "#b9f2ff",    // Diamond Blue
+  "MASTER": "#ff1493",     // Deep Pink
+  "GRANDMASTER": "#ff0000",// Red
+  "CHALLENGER": "#00ff00"  // Green
+};
+
+// Divisions in order
+const divisionsInOrder = [
+  "IRON IV", "IRON III", "IRON II", "IRON I",
+  "BRONZE IV", "BRONZE III", "BRONZE II", "BRONZE I",
+  "SILVER IV", "SILVER III", "SILVER II", "SILVER I",
+  "GOLD IV", "GOLD III", "GOLD II", "GOLD I",
+  "PLATINUM IV", "PLATINUM III", "PLATINUM II", "PLATINUM I",
+  "EMERALD IV", "EMERALD III", "EMERALD II", "EMERALD I",
+  "DIAMOND IV", "DIAMOND III", "DIAMOND II", "DIAMOND I",
+  "MASTER I", "GRANDMASTER", "CHALLENGER"
+];
+
+
+
+export default function LPGraph2() {
+  const [activeIndex, setActiveIndex] = useState(null)
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 })
+
+  const handleMouseMove = (e) => {
+    if (e.isTooltipActive) {
+      const { chartX, chartY } = e
+      setTooltipPosition({ x: chartX-50, y: chartY - 100 }) // Adjust the y value to position the tooltip above the point
+      setActiveIndex(e.activeTooltipIndex)
+    } else {
+      setActiveIndex(null)
+    }
+  }
 
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload
       return (
-        <div className="bg-background border rounded p-2 shadow-lg">
-          <p className="font-bold text-primary">{data.division}</p>
-          <p className="text-sm text-muted-foreground">{data.lp} LP</p>
+        <div className="flex flex-col bg-background rounded p-2 w-28 shadow-lg absolute"
+          style={{ left: tooltipPosition.x, top: tooltipPosition.y }}>
+          <p className="font-bold text-sm text-primary">{data.division}</p>
+          <p className="text-xs text-muted-foreground">{data.lp} LP</p>
           <p className="text-xs text-muted-foreground">
-            {new Date(data.date).toLocaleString()}
+        {new Date(data.date).toLocaleDateString('en-GB')}
           </p>
         </div>
       )
@@ -44,65 +85,50 @@ export default function LPGraph() {
   }
 
   return (
-    <Card className="w-full max-w-3xl">
-      <CardHeader>
-        <CardTitle>LP Graph</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <ChartContainer
-          config={{
-            lp: {
-              label: "LP",
-              color: "hsl(var(--chart-1))",
-            },
-          }}
-          className="h-[120px]"
-        >
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart
-              data={lpData}
-              margin={{ top: 5, right: 10, left: 10, bottom: 0 }}
-              onMouseMove={(e) => {
-                if (e.activeTooltipIndex !== undefined) {
-                  setActiveIndex(e.activeTooltipIndex)
-                }
-              }}
-              onMouseLeave={() => setActiveIndex(null)}
-            >
-              <XAxis
-                dataKey="date"
-                tickFormatter={(value) => new Date(value).toLocaleDateString()}
-                hide
-              />
-              <YAxis hide domain={['dataMin - 10', 'dataMax + 10']} />
-              <Tooltip content={<CustomTooltip />} />
-              <Line
-                type="monotone"
-                dataKey="lp"
-                stroke="var(--color-lp)"
-                strokeWidth={2}
-                dot={(props) => {
-                  const { cx, cy, index } = props
-                  const isActive = index === activeIndex
-                  const fill = lpData[index].division.includes("EMERALD")
-                    ? "rgb(81, 152, 71)"
-                    : "rgb(28, 145, 182)"
-                  return (
-                    <circle
-                      cx={cx}
-                      cy={cy}
-                      r={isActive ? 6 : 4}
-                      fill={fill}
-                      stroke={isActive ? "var(--color-lp)" : "none"}
-                      strokeWidth={2}
-                    />
-                  )
-                }}
-              />
-            </LineChart>
-          </ResponsiveContainer>
-        </ChartContainer>
-      </CardContent>
-    </Card>
+    <div className="h-full rounded-md">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart 
+          className="grow" 
+          width={200} 
+          height={105} 
+          data={lpData} 
+          margin={{ top: 5, right: 5, left: 5, bottom: 5 }}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={() => setActiveIndex(null)}
+          >
+                          <CartesianGrid  
+            verticalPoints={[25, 50, 75, 100, 125, 150, 175]}
+            horizontalPoints={[20, 40, 60, 80]}
+            strokeDasharray="3 5"
+            opacity={0.15}
+            />
+          <defs>
+            <linearGradient id="colorUv" x1="1" y1="1" x2="0" y2="0">
+              <stop offset="30%" stopColor="#6584FF" stopOpacity={0.5} />
+              <stop offset="95%" stopColor="#FFFFFF" stopOpacity={0.5} />
+            </linearGradient>
+          </defs>
+
+          <XAxis hide={true} />
+          <YAxis hide={true} />
+
+          
+          <Tooltip
+            content={<CustomTooltip />}
+            cursor={false}
+            isAnimationActive={false}
+            position={{ x: tooltipPosition.x, y: tooltipPosition.y}}
+          />
+          <Line
+            type="monotone"
+            dataKey="lp"
+            stroke="url(#colorUv)"
+            strokeWidth={2}
+            dot={false}
+            activeDot={{ r: 4, fill: "#6584FF" }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   )
 }

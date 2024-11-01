@@ -8,6 +8,53 @@ export const fetchPlayerData = async () => {
     return data
 }
 
+export const fetchPlayerData3 = async (route) => {
+  const url = `http://127.0.0.1:5000/api/${route}`;
+  console.log("Fetching data from URL: ", url);
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      console.error(`Failed to fetch data. Status: ${response.status}, StatusText: ${response.statusText}`);
+      throw new Error('Failed to fetch player data');
+    }
+    const data = await response.json();
+    console.log("Fetched data: ", data);
+    return data;
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+    throw error;
+  }
+};
+
+export const fetchPlayerSearch = async (query) => {
+  const url = `http://127.0.0.1:5000/api/playerSearch`;
+  query = 'Hyuje#EUW';
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ query }),
+    });
+
+    if (!response.ok) {
+      console.error(`Failed to post data. Status: ${response.status}, StatusText: ${response.statusText}`);
+      throw new Error('Failed to post player data');
+    }
+
+    const data = await response.json();
+    console.log("Posted data: ", data);
+    return data;
+  }
+  catch (error) {
+    console.error("Error posting data: ", error);
+    throw error;
+  }
+}
+
+
 export const fetchPlayerData2 = async (query) => {
   // Ensure query is provided
   if (!query) {

@@ -29,8 +29,8 @@ const Searchbar = () => {
         type="text" 
         value={query} 
         onChange={handleInputChange} 
-        placeholder="Name#Tagline (xxx#1234)" 
-        className="p-1 px-2 border-2 border-gray-600 rounded-xl w-64 bg-zinc-800 text-gray-300 transition-all duration-50 focus:outline-none focus:border-gray-400" 
+        placeholder="Name#Tagline" 
+        className="font-thin p-1 px-2 border-2 border-gray-600 rounded-xl w-64 bg-zinc-800 text-gray-300 transition-all duration-50 focus:outline-none focus:border-gray-400" 
       />
       <button onClick={handleSearch} className="ml-2 p-1 px-2 border-2 border-gray-600 rounded-xl bg-zinc-800 text-gray-300 transition-all duration-50 focus:outline-none focus:border-gray-400">
         Search

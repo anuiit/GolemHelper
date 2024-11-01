@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import { PlayerDataProvider } from "@/context/playerDataContext";
+// import { PlayerDataProvider } from "@/context/playerDataContext";
+import { Provider } from "@/components/ui-chakra/provider"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,11 +16,13 @@ const geistMono = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <PlayerDataProvider>
-          {children}
-        </PlayerDataProvider>
+        {/* <PlayerDataProvider> */}
+          <Provider>
+            {children}
+          </Provider>
+        {/* </PlayerDataProvider> */}
       </body>
     </html>
   );

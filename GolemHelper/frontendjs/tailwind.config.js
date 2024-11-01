@@ -9,6 +9,21 @@ module.exports = {
   theme: {
   	extend: {
   		colors: {
+			'vulcan': {
+				'50': '#f6f6f9',
+				'100': '#ededf1',
+				'200': '#d7d8e0',
+				'300': '#b3b5c6',
+				'400': '#8a8ca6',
+				'500': '#6b6e8c',
+				'600': '#565873',
+				'700': '#46475e',
+				'800': '#3e3a52',
+				'850': '#1c1c21',
+				'875': '#19191d',
+				'900': '#131316',
+				'950': '#0f0f13',
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -57,5 +72,8 @@ module.exports = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+	require("tailwindcss-inner-border")
+  ],
 };

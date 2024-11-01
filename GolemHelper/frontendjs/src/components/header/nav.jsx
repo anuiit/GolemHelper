@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Search } from 'lucide-react'
-import { Input } from '@/components/ui/input'
+import { Separator } from '@/components/ui/separator'
 
 export default function NavBar({ activeTab, setActiveTab }) {
   const [indicatorStyle, setIndicatorStyle] = useState({})
@@ -16,6 +15,9 @@ export default function NavBar({ activeTab, setActiveTab }) {
   useEffect(() => {
     const activeTabElement = tabRefs.current[tabs.findIndex(tab => tab.id === activeTab)]
     if (activeTabElement) {
+      const offsetWidth = activeTabElement.offsetWidth
+      const offsetLeft = activeTabElement.offsetLeft
+
       setIndicatorStyle({
         width: `${activeTabElement.offsetWidth}px`,
         left: `${activeTabElement.offsetLeft}px`,
@@ -24,18 +26,18 @@ export default function NavBar({ activeTab, setActiveTab }) {
   }, [activeTab])
 
   return (
-    <div className="mb-2 flex items-center justify-between">
-      <div className="relative pb-px">
+    <div className="flex items-center w-full">
+      <div className="relative flex-grow">
         <ul className="flex">
           {tabs.map((tab, index) => (
             <li key={tab.id} className="relative">
               <button
                 ref={el => (tabRefs.current[index] = el)}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative w-28 p-4 text-center transition-colors duration-300 ease-in-out ${
+                className={`relative w-30 p-4 text-center transition-colors duration-300 ease-in-out font-thin ${
                   activeTab === tab.id
-                    ? 'text-white'
-                    : 'text-gray-400 hover:text-gray-200'
+                    ? 'text-vulcan-200'
+                    : 'text-vulcan-400 hover:text-vulcan-200'
                 }`}
               >
                 {tab.label}
@@ -43,8 +45,10 @@ export default function NavBar({ activeTab, setActiveTab }) {
             </li>
           ))}
         </ul>
+
+        
         <span 
-          className="absolute bottom-0 h-1 bg-white rounded-t-xl transition-all duration-300 ease-in-out"
+          className={` w-30 absolute bottom-0 h-1 bg-vulcan-300 rounded-t-sm transition-all duration-300 ease-in-out`}
           style={indicatorStyle}
         />
       </div>
