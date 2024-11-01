@@ -1,15 +1,25 @@
 import requests
 import json
+from .config import Config
 
 
-with open('app/transformed_championsv2.json', 'r') as file:
+with open('app/new_champion_data.json', 'r') as file:
     master_champion_data = json.load(file)
 
-summonerSpellData = requests.get("https://ddragon.leagueoflegends.com/cdn/13.23.1/data/en_US/summoner.json")
+itemsData = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/data/en_US/item.json")
+itemsData = itemsData.json()
+
+summonerSpellData = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/data/en_US/summoner.json")
 summonerSpellData = summonerSpellData.json().get('data')
 
-runesData = requests.get("https://ddragon.leagueoflegends.com/cdn/13.23.1/data/en_US/runesReforged.json")
+runesData = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/data/en_US/runesReforged.json")
 runesData = runesData.json()
+
+
+communityDragonVersion = Config.PATCH_VERSION.split('.')[0] + "." + Config.PATCH_VERSION.split('.')[1]
+print(f"patch version: {communityDragonVersion}")
+queuesData = requests.get(f"https://raw.communitydragon.org/{communityDragonVersion}/plugins/rcp-be-lol-game-data/global/default/v1/queues.json")
+queuesData = queuesData.json()
 
 stat_runes = {
     5001: {"name": "Health", "url": "https://raw.communitydragon.org/pbe/plugins/rcp-be-lol-game-data/global/default/v1/perk-images/statmods/statmodshealthscalingicon.png"},
@@ -35,3 +45,52 @@ POSITIONS_NAME_TO_INT = {
     'BOTTOM': 3,
     'UTILITY': 4
 }
+
+def getQueueName(queueId):
+    for queue in queuesData:
+        if queue['id'] == queueId:
+            return queue['name']
+    return "Unknown Queue"
+
+def getChampionNameAndImage(championId):
+    # print(f'championId: {championId}')
+    champion_name = master_champion_data.get(str(championId), "Unknown Champion").get('name', "Unknown Champion")
+    champion_url = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/champion/{champion_name}.png'
+    return champion_name, champion_url
+
+def getSummonerSpellNameAndImage(key):
+    for spell in summonerSpellData:
+        if summonerSpellData[spell]['key'] == str(key):
+            summonerSpellName = summonerSpellData[spell]['id']
+            summonerSpellUrl = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/spell/{summonerSpellName}.png'
+
+    return summonerSpellName, summonerSpellUrl
+
+def getRuneImageandName(runeId):
+    if str(runeId).startswith('5'):
+        rune = stat_runes.get(runeId, {"name": "Unknown Rune", "url": ""})
+        return rune['name'], rune['url'], runeId
+    elif str(runeId).endswith('00'):
+        for rune_category in runesData:
+            if rune_category['id'] == runeId:
+                rune_url = f"https://ddragon.leagueoflegends.com/cdn/img/{rune_category['icon']}"
+                return rune_category['name'], rune_url, runeId
+    else:
+        for rune_category in runesData:
+            for slot in rune_category['slots']:
+                # print('debug slot: ', slot)
+                rune = next((r for r in slot['runes'] if r['id'] == runeId), None)
+                if rune:
+                    rune_url = f"https://ddragon.leagueoflegends.com/cdn/img/{rune['icon']}"
+                    return rune['name'], rune_url, runeId
+        return "Unknown Rune", "", runeId
+
+def getItemNameAndImage(itemId):
+    if itemId == 0:
+        return None, None
+    for item in itemsData['data']:
+        if item == str(itemId):
+            itemName = itemsData['data'][item]['name']
+            itemIcon = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/item/{itemId}.png'
+            return itemName, itemIcon
+    return "Unknown Item", str(itemId)
