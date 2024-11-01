@@ -6,9 +6,9 @@ import { Separator } from "@/components/ui/separator"
 import useFetchData from "@/hooks/useFetchData"
 import { Badge } from "../ui/badge"
 
-export default function MostPlayedChampions() {
+export default function MostPlayedChampions({ searchQuery }) {
   const [selectedTab, setSelectedTab] = React.useState("top");
-  const { data, loading } = useFetchData("mostPlayedChampions");
+  const { data, loading } = useFetchData("mostPlayedChampions", searchQuery);
   console.log("mostPlayedChampions: ", data);
 
   if (loading) {

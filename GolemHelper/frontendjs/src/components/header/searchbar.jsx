@@ -5,15 +5,15 @@ import { Button } from '@/components/ui-chakra/button';
 import { Input } from '@/components/ui/input';
 
 
-export default function Searchbar({ className }) {
-
+export default function Searchbar({ className, onSearch }) {
   const [localQuery, setLocalQuery] = useState('');
   const [isFocused, setIsFocused] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (localQuery) {
-      updateQuery(localQuery);
+      onSearch(localQuery); // Call the onSearch prop with the new query
+      console.log('Searching for:', localQuery);
     }
   };
 

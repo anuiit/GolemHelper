@@ -19,8 +19,8 @@ const divisionColors = {
   "CHALLENGER": "#00ff00"  // Green
 };
 
-export default function RankCard() {
-  const { data, loading } = useFetchData("statsData");
+export default function RankCard({ searchQuery }) {
+  const { data, loading } = useFetchData("statsData", searchQuery);
   console.log("playerHeader: ", data);
 
   if (loading) {

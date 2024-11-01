@@ -9,23 +9,25 @@ import LiveGame from '@/components/tabs/livegameTab';
 import Searchbar from '@/components/header/searchbar';
 import { Separator } from '@/components/ui/separator';
 
-const sampleLiveGameData = [
-  { name: "Player1", score: 100 },
-  { name: "Player2", score: 200 },
-];
 
 export default function PlayerProfile() {
   const [activeTab, setActiveTab] = useState("general");
+  const [searchQuery, setSearchQuery] = useState("Hyuje#EUW");
+  console.log("dataprofilesearchQuery: ", searchQuery);
+
   return (
     <div className='flex flex-col w-full min-h-screen items-center'>
       <div className='w-full bg-vulcan-950 py-6'>
         <div className='max-w-4xl pb-8 mx-auto flex'>
-          <Searchbar className="bg-stone-950 w-full" />
+          <Searchbar 
+            className="bg-stone-950 w-full" 
+            onSearch={setSearchQuery}
+          />
         </div>
       </div>
       <div className='w-full bg-vulcan-900 pt-2 drop-shadow-sm'>
         <div className='max-w-4xl mx-auto  '>
-          <PlayerHeader />
+          <PlayerHeader searchQuery={searchQuery} />
           <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
       </div>
@@ -35,7 +37,7 @@ export default function PlayerProfile() {
       <div className='w-full bg-vulcan-950 py-4 min-h-screen'>
         <div className='max-w-4xl mx-auto flex justify-center'>
           {activeTab === "general" && (
-            <Dashboard className='w-full' />
+            <Dashboard searchQuery={searchQuery} className='w-full' />
           )}
           {activeTab === "live-game" && (
             <div className="pt-4 w-full">

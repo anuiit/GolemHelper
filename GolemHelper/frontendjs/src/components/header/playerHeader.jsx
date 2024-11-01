@@ -1,8 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import useFetchData from "@/hooks/useFetchData";
 
-export default function PlayerHeader() {
-  const { data, loading } = useFetchData("headerData");
+export default function PlayerHeader({ searchQuery }) {
+  const { data, loading } = useFetchData("headerData", searchQuery);
   console.log("playerHeader: ", data);
 
   if (loading) {

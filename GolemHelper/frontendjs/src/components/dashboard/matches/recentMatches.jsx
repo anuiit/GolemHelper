@@ -8,25 +8,29 @@ import { CalendarDays } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useFetchPlayerData from '@/hooks/useFetchData';
 
-export default function RecentMatches() {
+export default function RecentMatches({ searchQuery }) {
   const [selectedTab, setSelectedTab] = useState('all');
-  const { data, loading } = useFetchPlayerData('playerMatchHistory');
-  const recentMatches = data?.matches;
+  const route = useMemo(() => 'playerMatchHistory', []);
+  const { data, loading } = useFetchPlayerData(route, searchQuery);
+  const recentMatches = data?.matches || [];
 
   const filterMatches = useCallback((matches, filter) => {
     if (filter === 'all') return matches;
     return matches.filter(match => match.gameMode.toLowerCase() === filter);
   }, []);
 
-  const filteredMatches = useMemo(() => filterMatches(recentMatches, selectedTab), [recentMatches, selectedTab, filterMatches]);
+  const filteredMatches = useMemo(
+    () => filterMatches(recentMatches, selectedTab),
+    [recentMatches, selectedTab, filterMatches]
+  );
 
   const renderMatchCards = useCallback(() => {
     return filteredMatches.map((match) => (
       <MatchCard key={match.gameId} match={match} name={data?.name} />
     ));
-  }, [filteredMatches]);
+  }, [filteredMatches, data?.name]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading || !data) return <div>Loading...</div>;
 
   return (
     <div className="w-full pt-4">
