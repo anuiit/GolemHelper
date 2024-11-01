@@ -6,15 +6,11 @@ from .game_data import getChampionNameAndImage, getQueueName, getSummonerSpellNa
 PATCH_VERSION = '14.21.1'
 
 poro = PoroPilot(Config.API_KEY, "euw1")
-player_puuid, player_data, player_champions, player_league, player_name = None, None, None, None, None
 
-def player_header2(name, tagline):
-    global player_name
-    player_name = name
+
+def player_header(name, tagline):
     player_puuid = poro.account.by_gamename(name, tagline)['puuid']
     player_data = poro.summoner.by_puuid(player_puuid)
-
-
 
     player_data['profileIconId'] = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/profileicon/{player_data["profileIconId"]}.png'
 
@@ -30,7 +26,6 @@ def player_header2(name, tagline):
 def player_stats(name, tagline):
     player_puuid = poro.account.by_gamename(name, tagline)['puuid']
     player_data = poro.summoner.by_puuid(player_puuid)
-
     player_league = poro.league.summoner(player_data['id'])
 
     player_data['profileIconId'] = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/profileicon/{player_data["profileIconId"]}.png'
@@ -67,28 +62,7 @@ def player_most_played_champions(name, tagline):
 
     return most_played_champions_props
 
-def player_header(name, tagline):
-    player_puuid = poro.account.by_gamename(name, tagline)['puuid']
-    player_data = poro.summoner.by_puuid(player_puuid)
-    player_champions = poro.mastery.by_puuid_top_champions(player_puuid)
-    player_league = poro.league.summoner(player_data['id'])
-    in_game = is_player_in_game(name, tagline)
-
-    recent_matches = get_recent_matches(player_puuid)
-
-    return recent_matches
-
-def live_game(name, tagline):
-    player_puuid = poro.account.by_gamename(name, tagline)['puuid']
-    player_data = poro.summoner.by_puuid(player_puuid)
-    player_champions = poro.mastery.by_puuid_top_champions(player_puuid)
-    player_league = poro.league.summoner(player_data['id'])
-
-    in_game = is_player_in_game(name, tagline)
-
-    return in_game
-
-def get_recent_matches(puuid):
+def get_recent_matches(name, puuid):
     player_history = []
     match_data = []
     player_history.extend(poro.match.by_puuid_matchlist(puuid, count=50))
@@ -97,31 +71,25 @@ def get_recent_matches(puuid):
         match_data.append(process_match_data(poro.match.by_match_id(match)))
 
     match_data = {
-        'name': player_name,
+        'name': name,
         'matches': match_data
     }
-        
-
-    # match_data.append(process_match_data(poro.match.by_match_id(player_history[0]))) 
-    # match_data.append(process_match_data(poro.match.by_match_id(player_history[1]))) 
 
     return match_data
 
 def process_match_data(ori_match_data, livegame=False):
     participants = []
-    # print("match_data", match_data)
+
     if livegame == False:
         match_data = ori_match_data['info']
     else:
         match_data = ori_match_data
 
-    # print("match_data2", match_data)
-
     for player in match_data['participants']:
         style_perks = player['perks']['styles']
         primary_perks = [style_perks[0]['style']]
         secondary_perks = [style_perks[1]['style']]
-
+    
         for perk in style_perks[0]['selections']:
             for key, value in perk.items():
                 if key == 'perk':
@@ -157,9 +125,6 @@ def process_match_data(ori_match_data, livegame=False):
             items[f'item{key}']['name'] = item_data[0]
             items[f'item{key}']['icon'] = item_data[1]
 
-            print('summoner1 ', getSummonerSpellNameAndImage(player['summoner1Id'])[0])
-            print('summoner2 ', getSummonerSpellNameAndImage(player['summoner2Id'])[0])
-
         player_data = {
             'gameName': player['riotIdGameName'],
             'championName': getChampionNameAndImage(player['championId'])[0],
@@ -192,12 +157,7 @@ def process_match_data(ori_match_data, livegame=False):
     game_creation_unix = match_data['gameCreation']
     game_creation_date = datetime.fromtimestamp(game_creation_unix / 1000).strftime('%d/%m/%Y')
 
-    # print(match_data['info']['gameMode'])
-    # print(match_data['info']['gameType'])
-    # print(match_data['info']['queueId'])
-
     game_mode = getQueueName(match_data['queueId'])
-    # print("tests", test)
 
     match_data = {
         'gameId': ori_match_data['metadata']['matchId'] if livegame == False else match_data['gameId'],
@@ -263,7 +223,7 @@ def is_player_in_game(name, tagline):
 
     return game_data
 
-def getPlayerRank(summonerId):
+def get_player_rank(summonerId):
     player_league = poro.league.summoner(summonerId)
     # get tier where queueType is RANKED_SOLO_5x5
     tier = next((queue['tier'] for queue in player_league if queue['queueType'] == 'RANKED_SOLO_5x5'), None)

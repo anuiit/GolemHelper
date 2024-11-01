@@ -15,9 +15,9 @@ summonerSpellData = summonerSpellData.json().get('data')
 runesData = requests.get(f"https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/data/en_US/runesReforged.json")
 runesData = runesData.json()
 
-
 communityDragonVersion = Config.PATCH_VERSION.split('.')[0] + "." + Config.PATCH_VERSION.split('.')[1]
 print(f"patch version: {communityDragonVersion}")
+
 queuesData = requests.get(f"https://raw.communitydragon.org/{communityDragonVersion}/plugins/rcp-be-lol-game-data/global/default/v1/queues.json")
 queuesData = queuesData.json()
 
