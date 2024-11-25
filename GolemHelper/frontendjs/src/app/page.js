@@ -7,9 +7,9 @@ import PlayerProfile from '@/pages/playerProfile';
 export default function Home() {
   const [activeTab, setActiveTab] = useState("general");
   return (
-    <>
+    <div>
       <PlayerProfile/>
-    </>
+    </div>
 
   );
 }

@@ -13,7 +13,6 @@ import { Separator } from '@/components/ui/separator';
 export default function PlayerProfile() {
   const [activeTab, setActiveTab] = useState("general");
   const [searchQuery, setSearchQuery] = useState("Hyuje#EUW");
-  console.log("dataprofilesearchQuery: ", searchQuery);
 
   return (
     <div className='flex flex-col w-full min-h-screen items-center'>
@@ -41,7 +40,7 @@ export default function PlayerProfile() {
           )}
           {activeTab === "live-game" && (
             <div className="pt-4 w-full">
-              <LiveGame players={sampleLiveGameData} />
+              <LiveGame searchQuery={searchQuery} />
             </div>
           )}
         </div>

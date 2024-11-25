@@ -7,44 +7,91 @@ import { ProgressCircleRoot, ProgressCircleRing } from "@/components/ui-chakra/p
 
 // Map divisions to colors
 const divisionColors = {
-  "IRON": "#6e6e6e",       // Gray
-  "BRONZE": "#cd7f32",     // Bronze
-  "SILVER": "#c0c0c0",     // Silver
-  "GOLD": "#ffd700",       // Gold
-  "PLATINUM": "#00bfff",   // Light Blue
-  "EMERALD": "#50C878",    // Emerald Green
-  "DIAMOND": "#b9f2ff",    // Diamond Blue
-  "MASTER": "#ff1493",     // Deep Pink
-  "GRANDMASTER": "#ff0000",// Red
-  "CHALLENGER": "#00ff00"  // Green
+  "IRON": {
+    color: "#6e6e6e",
+    classn: 'top-0 w-16'
+  },
+  "BRONZE": {
+    color: "#cd7f32",
+    classn: 'top-0 w-16'
+  },
+  "SILVER": {
+    color: "#c0c0c0",
+    classn: 'top-0 w-16'
+  },
+  "GOLD": {
+    color: "#ffd700",
+    classn: 'top-1 w-14'
+  },
+  "PLATINUM": {
+    color: "#21758C",
+    classn: 'top-2 w-14'
+  },
+  "EMERALD": {
+    color: "#50C878",
+    classn: 'top-2 w-14'
+  },
+  "DIAMOND": {
+    color: "#355EC2",
+    classn: 'top-1 w-12'
+  },
+  "MASTER": {
+    color: "#9F1FC2",
+    classn: 'top-2 w-12'
+  },
+  "GRANDMASTER": {
+    color: "#ff0000",
+    classn: 'top-2 w-12'
+  },
+  "CHALLENGER": {
+    color: "#d7d8e0",
+    classn: 'top-3 w-12'
+  }
 };
 
 export default function RankCard({ searchQuery }) {
   const { data, loading } = useFetchData("statsData", searchQuery);
-  console.log("playerHeader: ", data);
+  const rankColor = data?.tier ? divisionColors[data.tier.toUpperCase()].color : 'gray';
+  const rankClass = data?.tier ? divisionColors[data.tier.toUpperCase()].classn : 'top-0 w-16';
+  console.log("rankClass: ", rankClass);
+  const rankImage = data?.tier
+    ? `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/${data.tier.toLowerCase()}.png`
+    : '';
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="h-full">
+        <Card className="h-full">
+          <CardHeader>
+            <CardTitle className="text-gray-100">Stats</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+          </CardContent>
+
+        </Card>
+      </div>
+    )
   }
 
-  const rankColor = divisionColors[data.tier.toUpperCase()];
-  const rankImage = `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/${(data?.tier).toLowerCase()}.png`;
+  if (data?.lp > 100) {
+    data.lp = 100;
+  }
 
   console.log("stats: ", data);
   return (
-    <Card className="text-white">
+    <Card>
       <CardHeader>
         <CardTitle className="text-gray-100">Stats</CardTitle>
       </CardHeader>
       <CardContent className="space-y-2 flex">
 
-        <ProgressCircleRoot size="xl" value={30} colorPalette={rankColor}>
-          <ProgressCircleRing cap="round" css={{ "--thickness": "2px" }}/>
-          <img src={rankImage} alt="profile icon" className="absolute inset-0 w-14 h-14 m-auto" />
+        <ProgressCircleRoot size="xl" value={data.lp}   >
+          <ProgressCircleRing cap="round" color={rankColor} css={{ "--thickness": '2px' }}/>
+          <img src={rankImage} alt="profile icon" className={`absolute inset-0 m-auto shadow-lg ${rankClass}`} />
         </ProgressCircleRoot>
 
         <div className="grid grid-rows-2 ml-4">
-          <p className="font-extralight text-sm">{data.tier} {data.rank}</p>
+          <p className={`font-extralight text-sm`} style={{ color: rankColor }}>{data.tier} {data.rank}</p>
           <p className="text-xs font-thin">{data.lp} LPs - 28W/17L</p>
         </div>
           

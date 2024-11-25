@@ -58,6 +58,9 @@ def getChampionNameAndImage(championId):
     champion_url = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/champion/{champion_name}.png'
     return champion_name, champion_url
 
+def getChampionImage(championName):
+    return f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/champion/{championName}.png'
+
 def getSummonerSpellNameAndImage(key):
     for spell in summonerSpellData:
         if summonerSpellData[spell]['key'] == str(key):

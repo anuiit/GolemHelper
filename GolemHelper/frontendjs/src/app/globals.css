@@ -8,9 +8,28 @@ body {
 
 }
 
-.recharts-text {
+.recharts-t-l {
   font-weight: 100;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.recharts-t-r {
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.recharts-text[orientation='right'] {
+  margin-left: 0.5rem;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.recharts-text[orientation='left'] {
+  margin-right: 0.5rem;
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 
 .card-background {

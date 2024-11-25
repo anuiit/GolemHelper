@@ -1,28 +1,40 @@
-'use client'
+// src/components/livegame/LiveGameTab.jsx
+import React, { useState, useEffect } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import MatchPrediction from "../livegame/matchPrediction";
+import useFetchData from "@/hooks/useFetchData";
+import TeamColumn from "../livegame/teamColumn";
 
-import { useState, useEffect } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import MatchPrediction from "../livegame/matchPrediction"
-
-export default function LiveGame({ players }) {
-  const [isLoading, setIsLoading] = useState(true)
-  const [prediction, setPrediction] = useState(null)
+export default function LiveGameTab({ searchQuery }) {
+  const [isLoading, setIsLoading] = useState(true);
+  const [prediction, setPrediction] = useState(null);
+  const { data, loading } = useFetchData("liveGameData", searchQuery);
 
   useEffect(() => {
-    setIsLoading(true)
-    setPrediction(null)
+    if (!data) return;
+
+    setIsLoading(true);
+    setPrediction(null);
+
     // Simulate API call for prediction
     const timer = setTimeout(() => {
-      setIsLoading(false)
+      const random = Math.random();
       setPrediction({
-        winner: Math.random() > 0.5 ? "Blue Team" : "Red Team",
-        confidence: Math.random() * 30 + 70, // Random confidence between 70% and 100%
-      })
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [])
+        winner: random > 0.5 ? "Blue Team" : "Red Team",
+        confidence: Math.round(random * 30 + 70), // Random confidence between 70% and 100%
+      });
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [data]);
+
+  console.log("liveGameData:", data);
+  console.log("blue:",  data?.teams.blue.participants);
+
+  if (loading || !data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Card className="border-0">
@@ -33,21 +45,15 @@ export default function LiveGame({ players }) {
       <CardContent>
         <MatchPrediction isLoading={isLoading} prediction={prediction} />
         <div className="grid gap-4 md:grid-cols-2">
-          {players.map((player, index) => (
-            <Card key={index} className="flex items-center p-4 space-x-4 bg-zinc-900 border-0 ">
-              <Avatar>
-                <AvatarImage src={`/placeholder.svg?height=40&width=40&text=${player.champion}`} alt={player.champion} />
-                <AvatarFallback>{player.champion[0]}</AvatarFallback>
-              </Avatar>
-              <div className="flex-1 space-y-1">
-                <p className="text-sm font-medium leading-none text-gray-100">{player.name}</p>
-                <p className="text-sm text-gray-400">{player.champion}</p>
-              </div>
-              <Badge variant="secondary">{player.rank}</Badge>
-            </Card>
-          ))}
+          
+          {/* Blue Team Column */}
+          <TeamColumn teamName="Blue Team" participants={data?.teams.blue.participants} />
+          
+          {/* Red Team Column */}
+          <TeamColumn teamName="Red Team" participants={data?.teams.red.participants} />
+        
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

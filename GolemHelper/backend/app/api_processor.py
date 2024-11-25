@@ -1,12 +1,15 @@
 from PoroPilot import PoroPilot
 from .config import Config
 from datetime import datetime, timedelta
-from .game_data import getChampionNameAndImage, getQueueName, getSummonerSpellNameAndImage, getRuneImageandName, getItemNameAndImage
+from .game_data import getChampionNameAndImage, getQueueName, getSummonerSpellNameAndImage, getRuneImageandName, getItemNameAndImage, getChampionImage
+from collections import defaultdict
 
 PATCH_VERSION = '14.21.1'
 
 poro = PoroPilot(Config.API_KEY, "euw1")
+matches_data = []
 
+### API FUNCTIONS ###
 
 def player_header(name, tagline):
     player_puuid = poro.account.by_gamename(name, tagline)['puuid']
@@ -27,6 +30,7 @@ def player_stats(name, tagline):
     player_puuid = poro.account.by_gamename(name, tagline)['puuid']
     player_data = poro.summoner.by_puuid(player_puuid)
     player_league = poro.league.summoner(player_data['id'])
+    print()
 
     player_data['profileIconId'] = f'https://ddragon.leagueoflegends.com/cdn/{Config.PATCH_VERSION}/img/profileicon/{player_data["profileIconId"]}.png'
 
@@ -63,29 +67,31 @@ def player_most_played_champions(name, tagline):
     return most_played_champions_props
 
 def get_recent_matches(name, puuid):
+    global matches_data
+    matches_data = []
     player_history = []
-    match_data = []
+    
     player_history.extend(poro.match.by_puuid_matchlist(puuid, count=50))
     
     for match in player_history:
-        match_data.append(process_match_data(poro.match.by_match_id(match)))
+        matches_data.append(process_match_data(poro.match.by_match_id(match)))
 
     match_data = {
         'name': name,
-        'matches': match_data
+        'matches': matches_data
     }
 
     return match_data
 
-def process_match_data(ori_match_data, livegame=False):
+
+### DATA PROCESSING ###
+
+def process_match_data(match):
     participants = []
+    match_info = match['info']
+    match_metadata = match['metadata']
 
-    if livegame == False:
-        match_data = ori_match_data['info']
-    else:
-        match_data = ori_match_data
-
-    for player in match_data['participants']:
+    for player in match_info['participants']:
         style_perks = player['perks']['styles']
         primary_perks = [style_perks[0]['style']]
         secondary_perks = [style_perks[1]['style']]
@@ -149,34 +155,34 @@ def process_match_data(ori_match_data, livegame=False):
 
         participants.append(player_data)
 
-    game_duration_seconds = match_data['gameDuration']
+    game_duration_seconds = match_info['gameDuration']
     game_duration_minutes = game_duration_seconds // 60
     game_duration_seconds = game_duration_seconds % 60
     game_duration_formatted = f"{game_duration_minutes}:{game_duration_seconds:02d}"
 
-    game_creation_unix = match_data['gameCreation']
+    game_creation_unix = match_info['gameCreation']
     game_creation_date = datetime.fromtimestamp(game_creation_unix / 1000).strftime('%d/%m/%Y')
 
-    game_mode = getQueueName(match_data['queueId'])
+    game_mode = getQueueName(match_info['queueId'])
 
     match_data = {
-        'gameId': ori_match_data['metadata']['matchId'] if livegame == False else match_data['gameId'],
+        'gameId': match_metadata['matchId'],
         'gameDuration': game_duration_formatted,
-        'gameVersion': match_data['gameVersion'],
+        'gameVersion': match_info['gameVersion'],
         'gameCreation': game_creation_date,
         'gameMode': game_mode,
-        'gameResult': match_data['endOfGameResult'],
+        'gameResult': match_info['endOfGameResult'],
         'teams': {
             'blue': {
                 'teamId': 100,
-                'win': match_data['teams'][0]['win'],
-                'bans': [ban['championId'] for ban in match_data['teams'][0]['bans']],
+                'win': match_info['teams'][0]['win'],
+                'bans': [ban['championId'] for ban in match_info['teams'][0]['bans']],
                 'participants': participants[:5]
             },
             'red': {
                 'teamId': 200,
-                'win': match_data['teams'][1]['win'],
-                'bans': [ban['championId'] for ban in match_data['teams'][1]['bans']],
+                'win': match_info['teams'][1]['win'],
+                'bans': [ban['championId'] for ban in match_info['teams'][1]['bans']],
                 'participants': participants[5:]
             },
         }
@@ -184,7 +190,221 @@ def process_match_data(ori_match_data, livegame=False):
 
     return match_data
 
+def main_champions(name):
+    global matches_data
+    champions_stats = {}
+
+    for match in matches_data:
+        participants = match['teams']['blue']['participants'] + match['teams']['red']['participants']
+        player_data = next((player for player in participants if player['gameName'] == name), None)
+
+        champion = player_data.get('championName')
+        is_win = player_data.get('win', False)
+        kills = player_data.get('kills', 0)
+        assists = player_data.get('assists', 0)
+        deaths = player_data.get('deaths', 0)
+        minions_killed = player_data.get('minionsKilled', 0)
+
+        # Prevent division by zero for deaths
+        kda = (kills + assists) / max(deaths, 1)
+
+        # Extract game duration in minutes
+        game_duration = match.get('gameDuration', '0:00')  # Format expected: "MM:SS"
+        try:
+            game_duration_minutes = int(game_duration.split(':')[0])
+        except (ValueError, AttributeError):
+            game_duration_minutes = 1  # Default to 1 to prevent division by zero
+
+        # Prevent division by zero for game duration
+        csmin = minions_killed / max(game_duration_minutes, 1)
+
+        if champion not in champions_stats:
+            champions_stats[champion] = {
+                'name': champion,
+                'games': 0,
+                'kda_total': 0.0,
+                'csmin_total': 0.0,
+                'wins': 0
+            }
+
+        # Aggregate statistics
+        champions_stats[champion]['games'] += 1
+        champions_stats[champion]['kda_total'] += kda
+        champions_stats[champion]['csmin_total'] += csmin
+        if is_win:
+            champions_stats[champion]['wins'] += 1
+
+    # Sort champions by number of games played in descending order
+    sorted_champions = sorted(champions_stats.values(), key=lambda x: x['games'], reverse=True)
+
+    # Select top three most played champions
+    top_champions = sorted_champions[:3]
+
+    # Calculate average KDA, average CS/min, and winrate for the top three champions
+    main_champs = []
+    for champ in top_champions:
+        games = champ['games']
+        average_kda = champ['kda_total'] / games
+        average_csmin = champ['csmin_total'] / games
+        winrate = (champ['wins'] / games) * 100  # Convert to percentage
+
+        main_champs.append({
+            'name': champ['name'],
+            'games': games,
+            'average_kda': round(average_kda, 2),
+            'average_csmin': round(average_csmin, 2),
+            'winrate': round(winrate)
+        })
+
+    print(main_champs)
+    return main_champs
+
+def calculate_player_stats(name):
+    global matches_data
+    matches_by_date = defaultdict(list)
+    stats_by_date = []
+
+    for match in matches_data[::-1]:
+        game_duration_min = int(match['gameDuration'].split(':')[0])
+        if match['gameMode'] != 'Ranked Solo/Duo' or game_duration_min < 5:
+            continue
+        
+        match_date_str = match['gameCreation'].replace('/', '-')
+        matches_by_date[match_date_str].append(match)
+
+    
+    for date, match_date in matches_by_date.items():
+        # If only one match played on a date, skip it, non-relevant
+        if match_date.__len__() <= 1:
+            continue
+
+        kda = []
+        csmin = []
+        vision = []
+        winrate = []
+        passed_games = 0
+
+        for match_data in match_date:
+            # print(match_data)
+            game_duration_min, game_duration_sec = match_data['gameDuration'].split(':')
+            game_duration = (int(game_duration_min) * 60 + int(game_duration_sec)) / 60
+            participants = match_data['teams']['blue']['participants'] + match_data['teams']['red']['participants']
+            player_stats = next((player for player in participants if player['gameName'] == name), None)
+            # print("\n\n\n player stats: ", player_stats)
+            if player_stats['teamPosition'] == 'UTILITY':
+                passed_games += 1
+                continue
+
+            if player_stats['deaths'] == 0:
+                player_stats['deaths'] = 1
+
+            kda.append(player_stats['kills'] + player_stats['assists'] / player_stats['deaths'])
+            csmin.append(player_stats['minionsKilled'] / game_duration)
+            vision.append(player_stats['visionScore'])
+            winrate.append(player_stats['win'])
+        
+        # print(date, match_date.__len__())
+        # print((kda, csmin, vision, winrate))
+
+        print(f'KDA: {sum(kda) / max(len(kda) - passed_games, 1):.2f}')
+        print(f'CS/min: {sum(csmin) / max(len(csmin) - passed_games, 1):.2f}')
+        print(f'Vision Score: {sum(vision) / max(len(vision) - passed_games, 1):.2f}')
+        print(f'Winrate: {(sum(winrate) / max(len(winrate) - passed_games, 1)) * 100:.2f}%')
+        print('---')
+
+        match_date_stats = {
+            'date': date,
+            'kda': round(sum(kda) / max(len(kda) - passed_games, 1), 2),
+            'csmin': round(sum(csmin) / max(len(csmin) - passed_games, 1), 2),
+            'vision': round(sum(vision) / max(len(vision) - passed_games, 1), 2),
+            'winrate': round((sum(winrate) / max(len(winrate) - passed_games, 1)) * 100),
+            'played': len(kda) - passed_games
+        }
+
+        stats_by_date.append(match_date_stats)
+    
+    print(stats_by_date)
+    return stats_by_date
+
+def is_player_in_game(name, tagline):
+    summoner_puuid = poro.account.by_gamename(name, tagline)['puuid']
+    game_data = poro.spectator.by_summoner(summoner_puuid) or None
+
+    print(name, tagline, " - is in game: ", True if game_data else False)
+    
+    if game_data:
+        test = process_live_match(game_data)
+    
+        print("Live Data: ", test)
+
+    return test
+
 ## UTILITIES API FUNCTIONS ###
+
+def process_live_match(match):
+    banned_champions_blue = [getChampionNameAndImage(champion['championId']) for champion in match['bannedChampions'] if champion['teamId'] == 100]
+    banned_champions_red = [getChampionNameAndImage(champion['championId']) for champion in match['bannedChampions'] if champion['teamId'] == 200]
+
+    game_creation_unix = match['gameStartTime']
+    game_creation_date = datetime.fromtimestamp(game_creation_unix / 1000).strftime('%d/%m/%Y - %H:%M')
+
+
+    live_match_data = {
+        'gameId': match['gameId'],
+        'gameMode': match['gameMode'],
+        'gameType': match['gameType'],
+        'gameStartTime': game_creation_date,
+        'teams': {
+            'blue': {
+                'teamId': 100,
+                'participants': [process_live_player(player) for player in match['participants'][:5]],
+                'bannedChampions': banned_champions_blue,
+            },
+            'red': {
+                'teamId': 200,
+                'participants': [process_live_player(player) for player in match['participants'][5:]],
+                'bannedChampions': banned_champions_red,
+            }
+        }        
+    }
+
+    return live_match_data
+
+def process_live_player(player):
+    player_account = poro.account.by_puuid(player['puuid'])
+    name, tagline = player_account['gameName'], player_account['tagLine']
+
+    champion = getChampionNameAndImage(player['championId'])
+    summoner1, summoner2 = getSummonerSpellNameAndImage(player['spell1Id']), getSummonerSpellNameAndImage(player['spell2Id'])
+    
+    player_data = {
+        'teamId': player['teamId'],
+        'name': name,
+        'tagline': tagline,
+        'profileIcon': player['profileIconId'],
+        'champion': {
+            'name': champion[0],
+            'icon': champion[1]
+        },
+        'summoner1': {
+            'name': summoner1[0],
+            'icon': summoner1[1]
+        },
+        'summoner2': {
+            'name': summoner2[0],
+            'icon': summoner2[1]
+        },
+        # 'perks': {
+        #     'primary': [getRuneImageandName(rune) for rune in player['perks']['styles'][0]['selections']],
+        #     'secondary': [getRuneImageandName(rune) for rune in player['perks']['styles'][1]['selections']],
+        #     'statPerks': [getRuneImageandName(value) for key, value in player['perks']['statPerks'].items()],
+        # }
+    }
+
+    print(player_data)
+
+    return player_data
+
 
 def get_player_history(puuid, days=7, max_days=30, max_history=20):
     player_history = []
@@ -208,20 +428,6 @@ def get_player_history(puuid, days=7, max_days=30, max_history=20):
     # print(player_history)
 
     return player_history
-
-def is_player_in_game(name, tagline):
-    summoner_puuid = poro.account.by_gamename(name, tagline)['puuid']
-    summoner_id = poro.summoner.by_puuid(summoner_puuid)['id']
-
-    game_data = poro.spectator.by_summoner(summoner_puuid) or None
-
-    print(name, tagline, " - is in game: ", True if game_data else False)
-    if game_data:
-        test = process_match_data(game_data)
-    # test = process_match_data(game_data, livegame=True)
-    #print(test)
-
-    return game_data
 
 def get_player_rank(summonerId):
     player_league = poro.league.summoner(summonerId)

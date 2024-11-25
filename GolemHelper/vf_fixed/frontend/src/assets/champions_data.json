@@ -1,0 +1,3341 @@
+{
+    "84": {
+        "name": "Akali",
+        "title": "the Rogue Assassin",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "266": {
+        "name": "Aatrox",
+        "title": "the Darkin Blade",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "103": {
+        "name": "Ahri",
+        "title": "the Nine-Tailed Fox",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "assassin"
+        ]
+    },
+    "12": {
+        "name": "Alistar",
+        "title": "the Minotaur",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "555": {
+        "name": "Pyke",
+        "title": "the Bloodharbor Ripper",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "support",
+            "assassin"
+        ]
+    },
+    "166": {
+        "name": "Akshan",
+        "title": "the Rogue Sentinel",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "799": {
+        "name": "Ambessa",
+        "title": "Matriarch of War",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "32": {
+        "name": "Amumu",
+        "title": "the Sad Mummy",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "34": {
+        "name": "Anivia",
+        "title": "the Cryophoenix",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "1": {
+        "name": "Annie",
+        "title": "the Dark Child",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "246": {
+        "name": "Qiyana",
+        "title": "Empress of the Elements",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "497": {
+        "name": "Rakan",
+        "title": "The Charmer",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 3
+        },
+        "roles": [
+            "support"
+        ]
+    },
+    "523": {
+        "name": "Aphelios",
+        "title": "the Weapon of the Faithful",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "133": {
+        "name": "Quinn",
+        "title": "Demacia's Wings",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "136": {
+        "name": "Aurelion Sol",
+        "title": "The Star Forger",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "200": {
+        "name": "Bel'Veth",
+        "title": "the Empress of the Void",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "233": {
+        "name": "Briar",
+        "title": "the Restrained Hunger",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "63": {
+        "name": "Brand",
+        "title": "the Burning Vengeance",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "432": {
+        "name": "Bard",
+        "title": "the Wandering Caretaker",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "893": {
+        "name": "Aurora",
+        "title": "the Witch Between Worlds",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "assassin"
+        ]
+    },
+    "22": {
+        "name": "Ashe",
+        "title": "the Frost Archer",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "marksman",
+            "support"
+        ]
+    },
+    "53": {
+        "name": "Blitzcrank",
+        "title": "the Great Steam Golem",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "131": {
+        "name": "Diana",
+        "title": "Scorn of the Moon",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "42": {
+        "name": "Corki",
+        "title": "the Daring Bombardier",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "51": {
+        "name": "Caitlyn",
+        "title": "the Sheriff of Piltover",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "164": {
+        "name": "Camille",
+        "title": "the Steel Shadow",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "69": {
+        "name": "Cassiopeia",
+        "title": "the Serpent's Embrace",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "201": {
+        "name": "Braum",
+        "title": "the Heart of the Freljord",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "526": {
+        "name": "Rell",
+        "title": "the Iron Maiden",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "268": {
+        "name": "Azir",
+        "title": "the Emperor of the Sands",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "marksman"
+        ]
+    },
+    "122": {
+        "name": "Darius",
+        "title": "the Hand of Noxus",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "31": {
+        "name": "Cho'Gath",
+        "title": "the Terror of the Void",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "mage"
+        ]
+    },
+    "421": {
+        "name": "Rek'Sai",
+        "title": "the Void Burrower",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "33": {
+        "name": "Rammus",
+        "title": "the Armordillo",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank"
+        ]
+    },
+    "39": {
+        "name": "Irelia",
+        "title": "the Blade Dancer",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 3,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "360": {
+        "name": "Samira",
+        "title": "the Desert Rose",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "119": {
+        "name": "Draven",
+        "title": "the Glorious Executioner",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "81": {
+        "name": "Ezreal",
+        "title": "the Prodigal Explorer",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 1,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "13": {
+        "name": "Ryze",
+        "title": "the Rune Mage",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "68": {
+        "name": "Rumble",
+        "title": "the Mechanized Menace",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "mage"
+        ]
+    },
+    "245": {
+        "name": "Ekko",
+        "title": "the Boy Who Shattered Time",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "28": {
+        "name": "Evelynn",
+        "title": "Agony's Embrace",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "60": {
+        "name": "Elise",
+        "title": "the Spider Queen",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "9": {
+        "name": "Fiddlesticks",
+        "title": "the Ancient Fear",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "114": {
+        "name": "Fiora",
+        "title": "the Grand Duelist",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "105": {
+        "name": "Fizz",
+        "title": "the Tidal Trickster",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "fighter"
+        ]
+    },
+    "92": {
+        "name": "Riven",
+        "title": "the Exile",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "3": {
+        "name": "Galio",
+        "title": "the Colossus",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "mage"
+        ]
+    },
+    "41": {
+        "name": "Gangplank",
+        "title": "the Saltwater Scourge",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "86": {
+        "name": "Garen",
+        "title": "The Might of Demacia",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "36": {
+        "name": "Dr. Mundo",
+        "title": "the Madman of Zaun",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 1,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "107": {
+        "name": "Rengar",
+        "title": "the Pridestalker",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "fighter"
+        ]
+    },
+    "150": {
+        "name": "Gnar",
+        "title": "the Missing Link",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "79": {
+        "name": "Gragas",
+        "title": "the Rabble Rouser",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "mage"
+        ]
+    },
+    "104": {
+        "name": "Graves",
+        "title": "the Outlaw",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "887": {
+        "name": "Gwen",
+        "title": "The Hallowed Seamstress",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "120": {
+        "name": "Hecarim",
+        "title": "the Shadow of War",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "58": {
+        "name": "Renekton",
+        "title": "the Butcher of the Sands",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "74": {
+        "name": "Heimerdinger",
+        "title": "the Revered Inventor",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "910": {
+        "name": "Hwei",
+        "title": "the Visionary",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "888": {
+        "name": "Renata Glasc",
+        "title": "the Chem-Baroness",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "57": {
+        "name": "Maokai",
+        "title": "the Twisted Treant",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "427": {
+        "name": "Ivern",
+        "title": "the Green Father",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "11": {
+        "name": "Master Yi",
+        "title": "the Wuju Bladesman",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "fighter"
+        ]
+    },
+    "40": {
+        "name": "Janna",
+        "title": "the Storm's Fury",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "59": {
+        "name": "Jarvan IV",
+        "title": "the Exemplar of Demacia",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "27": {
+        "name": "Singed",
+        "title": "the Mad Chemist",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "mage"
+        ]
+    },
+    "24": {
+        "name": "Jax",
+        "title": "Grandmaster at Arms",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "126": {
+        "name": "Jayce",
+        "title": "the Defender of Tomorrow",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "marksman",
+            "fighter"
+        ]
+    },
+    "202": {
+        "name": "Jhin",
+        "title": "the Virtuoso",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "102": {
+        "name": "Shyvana",
+        "title": "the Half-Dragon",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "mage"
+        ]
+    },
+    "222": {
+        "name": "Jinx",
+        "title": "the Loose Cannon",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "145": {
+        "name": "Kai'Sa",
+        "title": "Daughter of the Void",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 0,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "429": {
+        "name": "Kalista",
+        "title": "the Spear of Vengeance",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "98": {
+        "name": "Shen",
+        "title": "the Eye of Twilight",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 3
+        },
+        "roles": [
+            "tank"
+        ]
+    },
+    "43": {
+        "name": "Karma",
+        "title": "the Enlightened One",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "90": {
+        "name": "Malzahar",
+        "title": "the Prophet of the Void",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "35": {
+        "name": "Shaco",
+        "title": "the Demon Jester",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "30": {
+        "name": "Karthus",
+        "title": "the Deathsinger",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "875": {
+        "name": "Sett",
+        "title": "the Boss",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "38": {
+        "name": "Kassadin",
+        "title": "the Void Walker",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "55": {
+        "name": "Katarina",
+        "title": "the Sinister Blade",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "10": {
+        "name": "Kayle",
+        "title": "the Righteous",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "mage",
+            "marksman"
+        ]
+    },
+    "147": {
+        "name": "Seraphine",
+        "title": "the Starry-Eyed Songstress",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "141": {
+        "name": "Kayn",
+        "title": "the Shadow Reaper",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "85": {
+        "name": "Kennen",
+        "title": "the Heart of the Tempest",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "235": {
+        "name": "Senna",
+        "title": "the Redeemer",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "marksman"
+        ]
+    },
+    "121": {
+        "name": "Kha'Zix",
+        "title": "the Voidreaver",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "203": {
+        "name": "Kindred",
+        "title": "The Eternal Hunters",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "240": {
+        "name": "Kled",
+        "title": "the Cantankerous Cavalier",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter"
+        ]
+    },
+    "96": {
+        "name": "Kog'Maw",
+        "title": "the Mouth of the Abyss",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "897": {
+        "name": "K'Sante",
+        "title": "the Pride of Nazumah",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "7": {
+        "name": "LeBlanc",
+        "title": "the Deceiver",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "64": {
+        "name": "Lee Sin",
+        "title": "the Blind Monk",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "89": {
+        "name": "Leona",
+        "title": "the Radiant Dawn",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "876": {
+        "name": "Lillia",
+        "title": "the Bashful Bloom",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "mage"
+        ]
+    },
+    "127": {
+        "name": "Lissandra",
+        "title": "the Ice Witch",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "113": {
+        "name": "Sejuani",
+        "title": "Fury of the North",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank"
+        ]
+    },
+    "236": {
+        "name": "Lucian",
+        "title": "the Purifier",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "117": {
+        "name": "Lulu",
+        "title": "the Fae Sorceress",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "99": {
+        "name": "Lux",
+        "title": "the Lady of Luminosity",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "54": {
+        "name": "Malphite",
+        "title": "Shard of the Monolith",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "mage"
+        ]
+    },
+    "420": {
+        "name": "Illaoi",
+        "title": "the Kraken Priestess",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "901": {
+        "name": "Smolder",
+        "title": "the Fiery Fledgling",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "2": {
+        "name": "Olaf",
+        "title": "the Berserker",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "91": {
+        "name": "Talon",
+        "title": "the Blade's Shadow",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "61": {
+        "name": "Orianna",
+        "title": "the Lady of Clockwork",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "902": {
+        "name": "Milio",
+        "title": "The Gentle Flame",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "516": {
+        "name": "Ornn",
+        "title": "The Fire below the Mountain",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "tank"
+        ]
+    },
+    "21": {
+        "name": "Miss Fortune",
+        "title": "the Bounty Hunter",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "163": {
+        "name": "Taliyah",
+        "title": "the Stoneweaver",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "62": {
+        "name": "Wukong",
+        "title": "the Monkey King",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "223": {
+        "name": "Tahm Kench",
+        "title": "The River King",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "82": {
+        "name": "Mordekaiser",
+        "title": "the Iron Revenant",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "mage"
+        ]
+    },
+    "25": {
+        "name": "Morgana",
+        "title": "the Fallen",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "72": {
+        "name": "Skarner",
+        "title": "the Primordial Sovereign",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "950": {
+        "name": "Naafiri",
+        "title": "the Hound of a Hundred Bites",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin",
+            "fighter"
+        ]
+    },
+    "134": {
+        "name": "Syndra",
+        "title": "the Dark Sovereign",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "267": {
+        "name": "Nami",
+        "title": "the Tidecaller",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "517": {
+        "name": "Sylas",
+        "title": "the Unshackled",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "assassin"
+        ]
+    },
+    "75": {
+        "name": "Nasus",
+        "title": "the Curator of the Sands",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "50": {
+        "name": "Swain",
+        "title": "the Noxian Grand General",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "16": {
+        "name": "Soraka",
+        "title": "the Starchild",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "111": {
+        "name": "Nautilus",
+        "title": "the Titan of the Depths",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "support"
+        ]
+    },
+    "518": {
+        "name": "Neeko",
+        "title": "the Curious Chameleon",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "37": {
+        "name": "Sona",
+        "title": "Maven of the Strings",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "76": {
+        "name": "Nidalee",
+        "title": "the Bestial Huntress",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "assassin",
+            "mage"
+        ]
+    },
+    "15": {
+        "name": "Sivir",
+        "title": "the Battle Mistress",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "895": {
+        "name": "Nilah",
+        "title": "the Joy Unbound",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "14": {
+        "name": "Sion",
+        "title": "The Undead Juggernaut",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "56": {
+        "name": "Nocturne",
+        "title": "the Eternal Nightmare",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "83": {
+        "name": "Yorick",
+        "title": "Shepherd of Souls",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "8": {
+        "name": "Vladimir",
+        "title": "the Crimson Reaper",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "fighter"
+        ]
+    },
+    "112": {
+        "name": "Viktor",
+        "title": "the Machine Herald",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "44": {
+        "name": "Taric",
+        "title": "the Shield of Valoran",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "tank"
+        ]
+    },
+    "777": {
+        "name": "Yone",
+        "title": "the Unforgotten",
+        "tacticalInfo": {
+            "style": 5,
+            "difficulty": 3,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "234": {
+        "name": "Viego",
+        "title": "The Ruined King",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "80": {
+        "name": "Pantheon",
+        "title": "the Unbreakable Spear",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "157": {
+        "name": "Yasuo",
+        "title": "the Unforgiven",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "254": {
+        "name": "Vi",
+        "title": "the Piltover Enforcer",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "711": {
+        "name": "Vex",
+        "title": "the Gloomist",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "78": {
+        "name": "Poppy",
+        "title": "Keeper of the Hammer",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "5": {
+        "name": "Xin Zhao",
+        "title": "the Seneschal of Demacia",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "161": {
+        "name": "Vel'Koz",
+        "title": "the Eye of the Void",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "17": {
+        "name": "Teemo",
+        "title": "the Swift Scout",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "45": {
+        "name": "Veigar",
+        "title": "the Tiny Master of Evil",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "101": {
+        "name": "Xerath",
+        "title": "the Magus Ascendant",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "67": {
+        "name": "Vayne",
+        "title": "the Night Hunter",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "110": {
+        "name": "Varus",
+        "title": "the Arrow of Retribution",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "mage"
+        ]
+    },
+    "6": {
+        "name": "Urgot",
+        "title": "the Dreadnought",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "498": {
+        "name": "Xayah",
+        "title": "the Rebel",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "77": {
+        "name": "Udyr",
+        "title": "the Spirit Walker",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "29": {
+        "name": "Twitch",
+        "title": "the Plague Rat",
+        "tacticalInfo": {
+            "style": 1,
+            "difficulty": 2,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "4": {
+        "name": "Twisted Fate",
+        "title": "the Card Master",
+        "tacticalInfo": {
+            "style": 7,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 2
+        },
+        "roles": [
+            "mage",
+            "marksman"
+        ]
+    },
+    "23": {
+        "name": "Tryndamere",
+        "title": "the Barbarian King",
+        "tacticalInfo": {
+            "style": 2,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 2,
+            "crowdControl": 1,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "assassin"
+        ]
+    },
+    "48": {
+        "name": "Trundle",
+        "title": "the Troll King",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 1,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "19": {
+        "name": "Warwick",
+        "title": "the Uncaged Wrath of Zaun",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 2,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "18": {
+        "name": "Tristana",
+        "title": "the Yordle Gunner",
+        "tacticalInfo": {
+            "style": 3,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "marksman",
+            "assassin"
+        ]
+    },
+    "412": {
+        "name": "Thresh",
+        "title": "the Chain Warden",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 2,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "tank"
+        ]
+    },
+    "106": {
+        "name": "Volibear",
+        "title": "the Relentless Storm",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 1,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "fighter",
+            "tank"
+        ]
+    },
+    "20": {
+        "name": "Nunu & Willump",
+        "title": "the Boy and His Yeti",
+        "tacticalInfo": {
+            "style": 8,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 3,
+            "crowdControl": 2,
+            "mobility": 1,
+            "utility": 2
+        },
+        "roles": [
+            "tank",
+            "mage"
+        ]
+    },
+    "143": {
+        "name": "Zyra",
+        "title": "Rise of the Thorns",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 3,
+            "mobility": 1,
+            "utility": 1
+        },
+        "roles": [
+            "mage",
+            "support"
+        ]
+    },
+    "142": {
+        "name": "Zoe",
+        "title": "the Aspect of Twilight",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 3,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "26": {
+        "name": "Zilean",
+        "title": "the Chronokeeper",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    },
+    "115": {
+        "name": "Ziggs",
+        "title": "the Hexplosives Expert",
+        "tacticalInfo": {
+            "style": 9,
+            "difficulty": 2,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "mage"
+        ]
+    },
+    "221": {
+        "name": "Zeri",
+        "title": "The Spark of Zaun",
+        "tacticalInfo": {
+            "style": 4,
+            "difficulty": 2,
+            "damageType": "kMixed"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 1,
+            "crowdControl": 2,
+            "mobility": 3,
+            "utility": 0
+        },
+        "roles": [
+            "marksman"
+        ]
+    },
+    "238": {
+        "name": "Zed",
+        "title": "the Master of Shadows",
+        "tacticalInfo": {
+            "style": 6,
+            "difficulty": 3,
+            "damageType": "kPhysical"
+        },
+        "playstyleInfo": {
+            "damage": 3,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 1
+        },
+        "roles": [
+            "assassin"
+        ]
+    },
+    "154": {
+        "name": "Zac",
+        "title": "the Secret Weapon",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 2,
+            "durability": 3,
+            "crowdControl": 3,
+            "mobility": 2,
+            "utility": 1
+        },
+        "roles": [
+            "tank",
+            "fighter"
+        ]
+    },
+    "350": {
+        "name": "Yuumi",
+        "title": "the Magical Cat",
+        "tacticalInfo": {
+            "style": 10,
+            "difficulty": 1,
+            "damageType": "kMagic"
+        },
+        "playstyleInfo": {
+            "damage": 1,
+            "durability": 1,
+            "crowdControl": 1,
+            "mobility": 3,
+            "utility": 3
+        },
+        "roles": [
+            "support",
+            "mage"
+        ]
+    }
+}

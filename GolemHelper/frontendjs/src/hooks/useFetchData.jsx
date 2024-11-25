@@ -1,31 +1,45 @@
+// src/hooks/useFetchData.jsx
 import { useState, useEffect } from 'react';
 import { fetchPlayerData3 } from '@/services/api';
+import { useLoading } from '@/context/loadingContext';
 
-export default function useFetchData(route, searchQuery) {
+export default function useFetchData(route, searchQuery, dependsOn = []) {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLocalLoading] = useState(true);
+  const { loadingStates, setLoading } = useLoading();
 
   const searchKey = searchQuery?.split('#')[0] || '';
 
   useEffect(() => {
     if (!searchQuery) return;
 
-    setLoading(true);
+    // Check if dependencies are still loading
+    const areDependenciesLoading = dependsOn.some(dep => loadingStates[dep]);
 
-    async function getData() {
+    if (areDependenciesLoading) {
+      // Wait until dependencies are loaded
+      return;
+    }
+
+    // Reset data and set loading states
+    setData(null); // Clear previous data
+    setLoading(route, true);
+    setLocalLoading(true);
+
+    const fetchData = async () => {
       try {
-        console.log('Fetching data for route:', route, 'with searchQuery:', searchQuery);
         const result = await fetchPlayerData3(route, searchQuery);
         setData(result);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error(`Error fetching data for ${route}:`, error);
       } finally {
-        setLoading(false);
+        setLoading(route, false);
+        setLocalLoading(false);
       }
-    }
+    };
 
-    getData();
-  }, [searchKey]);
+    fetchData();
+  }, [searchKey, ...dependsOn.map(dep => loadingStates[dep])]); // Include dependencies in the effect
 
   return { data, loading };
 }
