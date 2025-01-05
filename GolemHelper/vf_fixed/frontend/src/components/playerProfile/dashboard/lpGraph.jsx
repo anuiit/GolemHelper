@@ -76,7 +76,7 @@ export default function LPGraph() {
           <p className="font-bold text-sm text-primary">{data.division}</p>
           <p className="text-xs text-muted-foreground">{data.lp} LP</p>
           <p className="text-xs text-muted-foreground">
-        {new Date(data.date).toLocaleDateString('en-GB')}
+            {new Date(data.date).toLocaleDateString('en-GB')}
           </p>
         </div>
       )

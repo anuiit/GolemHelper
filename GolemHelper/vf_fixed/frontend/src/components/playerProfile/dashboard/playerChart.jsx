@@ -27,39 +27,19 @@ export const RenderLegend = (props) => {
     );
 };
 
-// Memoized Custom Tooltip Component
-const CustomTooltip = React.memo(({ active, payload, coordinate }) => {
-  if (!active || !payload?.length) return null;
 
-  const { x, y } = coordinate; // Recharts provides the coordinates
-
-  const tooltipData = payload[0].payload;
-  return (
-    <div 
-      className="flex flex-col bg-background rounded w-28 px-2 py-2 shadow-lg absolute pointer-events-none"
-      style={{ left: x + 10, top: y - 30 }} // Adjust positioning as needed
-    >
-      <p className="text-xs text-[#761a68]">{tooltipData.winrate}% wr</p>
-      <p className="text-xs text-[#b3b5be]">{tooltipData.csmin} cs/min</p>
-      <p className="text-xs text-[#5c48e0]">{tooltipData.kda} kda</p>
-      <p className="text-xs text-[#5e89a9]">{tooltipData.vision} vision</p>
-      <p className="text-xs">{tooltipData.played} played</p>
-      <p className="text-xs">{tooltipData.date}</p>
-    </div>
-  );
-});
 
 export const PlayerChart = React.memo(function PlayerChart({ searchQuery }) {
   console.log("PlayerChart mounted with searchQuery:", searchQuery);
   const { data, loading } = useFetchData("playerChart", searchQuery, ['playerMatchHistory']);
-  const tooltipRef = useRef({ x: 0, y: 0 });
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 })
   const [activeIndex, setActiveIndex] = useState(null);
 
   // Handle Mouse Move
   const handleMouseMove = (e) => {
     if (e.isTooltipActive && e.activeTooltipIndex !== activeIndex) {
       const { chartX, chartY } = e;
-      tooltipRef.current = { x: chartX + 50, y: chartY };
+      setTooltipPosition({ x: chartX + 50, y: chartY });
       setActiveIndex(e.activeTooltipIndex);
     } else if (!e.isTooltipActive && activeIndex !== null) {
       setActiveIndex(null);
@@ -69,6 +49,25 @@ export const PlayerChart = React.memo(function PlayerChart({ searchQuery }) {
    // Handle Mouse Leave
    const handleMouseLeave = () => {
     setActiveIndex(null);
+  };
+
+  const CustomTooltip = ({ active, payload }) => {
+    if (!active || !payload?.length) return null;
+
+    const tooltipData = payload[0].payload;
+    return (
+      <div 
+        className="flex flex-col bg-background rounded w-28 px-2 py-2 shadow-lg absolute"
+        style={{ left: tooltipPosition.x, top: tooltipPosition.y }}
+      >
+        <p className="text-xs text-[#761a68]">{tooltipData.winrate}% wr</p>
+        <p className="text-xs text-[#b3b5be]">{tooltipData.csmin} cs/min</p>
+        <p className="text-xs text-[#5c48e0]">{tooltipData.kda} kda</p>
+        <p className="text-xs text-[#5e89a9]">{tooltipData.vision} vision</p>
+        <p className="text-xs">{tooltipData.played} played</p>
+        <p className="text-xs">{tooltipData.date}</p>
+      </div>
+    );
   };
 
   return (
@@ -100,7 +99,7 @@ export const PlayerChart = React.memo(function PlayerChart({ searchQuery }) {
                   content={CustomTooltip}
                   cursor={{ stroke: '#565873', strokeWidth: 1 }}
                   isAnimationActive={false}
-                  
+                  position={{ x: tooltipPosition.x, y: tooltipPosition.y}}
                 />
                 <Legend content={RenderLegend}/>
                 

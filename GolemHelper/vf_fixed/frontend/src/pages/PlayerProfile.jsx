@@ -61,14 +61,7 @@ function PlayerProfile() {
     >
       <Dashboard searchQuery={playerName} className='w-full' />
     </div>
-    {/* Live Game Tab */}
-    <div
-      className={`w-full pt-4 transition-opacity duration-500 ease-in-out ${
-        activeTab === 'live-game' ? 'opacity-100 relative' : 'opacity-0 absolute inset-0 pointer-events-none'
-      }`}
-    >
-      <LiveGameTab searchQuery={playerName} />
-    </div>
+
   </div>
 </div>
     </div>
